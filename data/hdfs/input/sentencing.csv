@@ -1,0 +1,301 @@
+offense_id,offense_type,guideline_sentence,actual_sentence,defendant_gender,defendant_race,defendant_education,fine_amount,prison_flag,year
+SENT_0000,Violent,141,108,F,White,College,402713,0,2016
+SENT_0001,Drug,197,105,F,Asian,College,339040,0,2021
+SENT_0002,Fraud,153,81,M,Asian,College,178295,0,2015
+SENT_0003,Fraud,132,246,M,Black,Graduate,227530,1,2024
+SENT_0004,Weapons,190,248,F,Black,High School,134525,1,2018
+SENT_0005,Fraud,129,66,F,White,Graduate,150439,0,2019
+SENT_0006,White Collar,60,115,F,Black,High School,458102,0,2016
+SENT_0007,Weapons,44,61,F,Black,High School,206359,0,2016
+SENT_0008,Violent,110,175,M,Hispanic,College,122377,1,2017
+SENT_0009,Drug,79,30,F,Hispanic,Graduate,373927,0,2019
+SENT_0010,Fraud,31,26,F,Asian,College,378905,1,2015
+SENT_0011,Fraud,13,72,F,Hispanic,High School,369525,0,2019
+SENT_0012,Drug,173,231,F,Hispanic,Graduate,182297,1,2023
+SENT_0013,Fraud,102,42,F,White,High School,34398,0,2021
+SENT_0014,Drug,102,79,F,White,Graduate,47323,1,2016
+SENT_0015,Violent,189,300,F,Hispanic,High School,168983,0,2023
+SENT_0016,Fraud,60,4,F,White,College,351644,1,2015
+SENT_0017,Violent,178,179,M,Black,High School,64590,0,2016
+SENT_0018,Fraud,118,211,F,Asian,Graduate,196481,0,2021
+SENT_0019,Drug,118,102,M,White,High School,440517,1,2021
+SENT_0020,White Collar,220,10,M,Asian,High School,282662,0,2018
+SENT_0021,Fraud,240,92,M,Hispanic,Graduate,138219,0,2023
+SENT_0022,Violent,240,179,F,Black,Graduate,142998,1,2019
+SENT_0023,Fraud,194,141,F,Black,Graduate,194139,1,2022
+SENT_0024,Violent,91,24,M,Black,College,410002,0,2024
+SENT_0025,White Collar,159,137,F,Black,College,434156,1,2017
+SENT_0026,Drug,131,75,M,Asian,College,329384,0,2016
+SENT_0027,Weapons,120,249,M,Black,Graduate,350007,1,2023
+SENT_0028,Drug,186,72,F,Asian,Graduate,469048,1,2022
+SENT_0029,Violent,154,273,F,Hispanic,High School,102903,1,2021
+SENT_0030,White Collar,159,122,M,White,High School,19367,0,2021
+SENT_0031,White Collar,105,234,M,Asian,Graduate,421968,1,2015
+SENT_0032,Fraud,177,144,F,Black,College,177350,0,2017
+SENT_0033,Violent,32,202,M,White,Graduate,317331,1,2017
+SENT_0034,Weapons,108,29,F,White,Graduate,169305,1,2018
+SENT_0035,Weapons,80,96,F,White,College,125710,1,2019
+SENT_0036,Drug,185,126,F,Asian,High School,405177,1,2020
+SENT_0037,Drug,136,9,M,White,Graduate,440898,1,2022
+SENT_0038,Violent,140,197,F,Black,Graduate,355988,1,2018
+SENT_0039,White Collar,174,4,F,Hispanic,College,207002,1,2015
+SENT_0040,Violent,232,133,F,Hispanic,High School,25103,1,2022
+SENT_0041,Violent,207,216,M,Asian,Graduate,275047,0,2022
+SENT_0042,Fraud,107,23,M,Black,Graduate,274656,0,2022
+SENT_0043,Drug,102,34,M,Hispanic,College,467323,1,2018
+SENT_0044,White Collar,235,115,F,White,Graduate,460157,0,2023
+SENT_0045,Weapons,191,264,M,Hispanic,High School,435253,0,2016
+SENT_0046,Fraud,33,133,F,Hispanic,Graduate,354215,0,2017
+SENT_0047,Violent,104,150,M,Black,High School,264400,1,2017
+SENT_0048,Fraud,202,4,F,Black,Graduate,42986,0,2015
+SENT_0049,Fraud,200,81,F,Hispanic,Graduate,54289,1,2016
+SENT_0050,Weapons,124,172,F,Asian,College,424942,1,2020
+SENT_0051,Violent,127,204,M,Black,Graduate,159160,1,2016
+SENT_0052,White Collar,230,255,F,Black,High School,2169,0,2021
+SENT_0053,Drug,35,172,M,Black,College,118340,0,2022
+SENT_0054,Violent,215,237,F,White,Graduate,420560,1,2021
+SENT_0055,White Collar,29,110,M,White,Graduate,171569,0,2020
+SENT_0056,Violent,100,247,F,Asian,Graduate,131561,1,2018
+SENT_0057,Drug,84,125,M,Black,College,195041,1,2022
+SENT_0058,Fraud,181,49,F,Hispanic,High School,457885,1,2017
+SENT_0059,White Collar,207,289,M,Black,Graduate,305267,1,2015
+SENT_0060,Weapons,101,287,M,Hispanic,High School,179076,1,2018
+SENT_0061,Weapons,40,55,M,Black,College,264576,0,2023
+SENT_0062,Weapons,90,2,F,Asian,High School,118156,1,2020
+SENT_0063,Weapons,219,58,F,Hispanic,Graduate,415781,1,2017
+SENT_0064,Weapons,190,51,M,White,College,293371,1,2022
+SENT_0065,Violent,235,57,M,Black,High School,60679,1,2019
+SENT_0066,Fraud,146,56,F,Hispanic,College,176926,1,2020
+SENT_0067,Fraud,8,113,M,White,Graduate,324855,0,2021
+SENT_0068,Weapons,51,208,M,Black,High School,77003,0,2016
+SENT_0069,White Collar,91,262,M,Black,College,229260,0,2016
+SENT_0070,White Collar,44,183,M,Asian,Graduate,248441,1,2023
+SENT_0071,White Collar,152,137,M,Hispanic,Graduate,492716,0,2018
+SENT_0072,Weapons,186,243,M,White,High School,464476,1,2020
+SENT_0073,Fraud,155,295,M,Black,Graduate,341367,1,2015
+SENT_0074,Drug,86,43,M,White,High School,455577,0,2020
+SENT_0075,Weapons,192,249,M,Asian,College,286911,0,2020
+SENT_0076,Violent,178,259,F,Asian,Graduate,142985,0,2019
+SENT_0077,Drug,175,210,M,White,College,283295,0,2021
+SENT_0078,Fraud,203,274,F,Black,College,277983,1,2023
+SENT_0079,White Collar,88,2,F,Asian,College,189319,1,2016
+SENT_0080,Violent,112,26,M,Hispanic,College,107879,1,2023
+SENT_0081,White Collar,132,107,F,White,College,255476,0,2015
+SENT_0082,Drug,8,297,M,Black,College,408662,1,2019
+SENT_0083,White Collar,165,294,M,Hispanic,Graduate,199443,0,2016
+SENT_0084,Fraud,68,125,F,Hispanic,Graduate,259605,1,2021
+SENT_0085,White Collar,163,255,M,Hispanic,College,498534,0,2022
+SENT_0086,Violent,36,282,M,Asian,Graduate,67784,0,2018
+SENT_0087,Weapons,10,67,F,Hispanic,Graduate,438240,1,2015
+SENT_0088,Weapons,38,122,M,White,High School,1292,1,2019
+SENT_0089,Drug,75,172,M,Black,College,32456,0,2023
+SENT_0090,Violent,237,77,F,Asian,College,300368,1,2019
+SENT_0091,Weapons,100,198,F,White,High School,373016,1,2020
+SENT_0092,Fraud,223,263,F,White,College,139465,1,2016
+SENT_0093,Weapons,147,195,M,White,College,235432,1,2021
+SENT_0094,White Collar,21,39,M,Black,College,2134,1,2024
+SENT_0095,Violent,205,254,F,Hispanic,Graduate,131752,1,2023
+SENT_0096,Weapons,212,92,M,Black,High School,18173,0,2018
+SENT_0097,Weapons,78,50,M,Hispanic,High School,210292,0,2017
+SENT_0098,Drug,132,124,F,White,Graduate,418762,0,2022
+SENT_0099,White Collar,121,55,F,White,High School,150598,1,2019
+SENT_0100,Fraud,155,223,F,Hispanic,High School,326335,1,2022
+SENT_0101,Drug,186,249,F,Hispanic,College,460082,0,2017
+SENT_0102,White Collar,162,281,M,Hispanic,High School,491181,1,2020
+SENT_0103,Drug,202,87,F,Black,College,216133,1,2018
+SENT_0104,Weapons,203,55,M,Asian,High School,240633,0,2015
+SENT_0105,Weapons,199,61,M,Asian,Graduate,441589,0,2022
+SENT_0106,White Collar,126,263,M,Hispanic,High School,417073,1,2019
+SENT_0107,Drug,195,52,M,Black,College,12711,1,2018
+SENT_0108,White Collar,95,32,M,Black,College,362594,0,2019
+SENT_0109,Drug,37,16,F,Hispanic,Graduate,206572,1,2018
+SENT_0110,Violent,21,73,M,White,High School,213946,1,2022
+SENT_0111,Fraud,220,62,F,White,High School,426793,0,2015
+SENT_0112,White Collar,12,11,M,Hispanic,College,276532,1,2023
+SENT_0113,Fraud,178,51,M,Asian,High School,6019,1,2016
+SENT_0114,Violent,227,248,M,White,High School,424283,1,2022
+SENT_0115,Violent,22,41,M,Hispanic,High School,272875,1,2018
+SENT_0116,White Collar,6,146,M,Black,Graduate,173618,0,2015
+SENT_0117,Drug,60,76,F,Asian,High School,274255,1,2016
+SENT_0118,White Collar,166,200,M,Asian,College,329427,1,2018
+SENT_0119,Violent,222,223,F,White,High School,60425,0,2016
+SENT_0120,Fraud,190,174,M,Black,College,448030,0,2021
+SENT_0121,Fraud,123,4,F,Black,Graduate,48503,0,2015
+SENT_0122,Violent,86,14,F,Black,College,72721,1,2018
+SENT_0123,Drug,216,144,F,Black,High School,384623,0,2023
+SENT_0124,Drug,16,112,M,Black,Graduate,231134,1,2021
+SENT_0125,Fraud,38,8,M,Black,Graduate,379279,0,2022
+SENT_0126,Drug,126,165,F,White,College,299775,0,2021
+SENT_0127,Fraud,120,93,F,Black,College,453416,1,2019
+SENT_0128,Fraud,12,125,F,Black,High School,456340,1,2024
+SENT_0129,Drug,34,181,M,Black,College,65546,1,2016
+SENT_0130,White Collar,212,295,F,Black,Graduate,25625,0,2022
+SENT_0131,Weapons,39,104,M,Hispanic,Graduate,45547,0,2015
+SENT_0132,White Collar,28,225,F,Hispanic,High School,327334,0,2017
+SENT_0133,Weapons,141,177,F,Asian,Graduate,199930,1,2020
+SENT_0134,Fraud,108,42,M,White,High School,147525,0,2020
+SENT_0135,Violent,80,299,M,Hispanic,Graduate,410006,1,2015
+SENT_0136,Weapons,22,275,M,White,High School,246227,1,2023
+SENT_0137,Fraud,213,133,M,Black,High School,443290,1,2024
+SENT_0138,Violent,110,181,M,Black,High School,490469,0,2015
+SENT_0139,Drug,34,250,F,Asian,Graduate,380672,1,2018
+SENT_0140,Violent,75,106,F,White,Graduate,241142,0,2015
+SENT_0141,White Collar,93,37,F,Black,College,296351,0,2016
+SENT_0142,Fraud,38,77,F,Black,High School,244137,1,2019
+SENT_0143,White Collar,71,143,M,White,Graduate,432531,1,2020
+SENT_0144,White Collar,127,89,M,Hispanic,College,160530,1,2015
+SENT_0145,Drug,189,295,F,White,College,346150,1,2018
+SENT_0146,Fraud,212,81,M,Black,Graduate,132920,0,2016
+SENT_0147,Fraud,109,226,M,Black,High School,129504,1,2024
+SENT_0148,Fraud,229,281,M,Asian,High School,242259,0,2023
+SENT_0149,Drug,205,147,M,Hispanic,High School,408413,0,2020
+SENT_0150,Violent,17,283,M,White,College,170710,0,2020
+SENT_0151,Fraud,102,2,M,Hispanic,Graduate,36162,1,2016
+SENT_0152,Weapons,143,207,M,Asian,High School,261776,0,2024
+SENT_0153,Weapons,233,123,M,Black,College,306813,0,2024
+SENT_0154,Weapons,134,172,M,Black,College,132993,1,2017
+SENT_0155,Violent,29,169,F,Black,High School,308296,0,2022
+SENT_0156,Fraud,209,108,F,Black,College,43433,0,2017
+SENT_0157,Fraud,192,100,F,Asian,College,318650,1,2018
+SENT_0158,White Collar,137,98,M,White,High School,454000,0,2018
+SENT_0159,Weapons,47,28,M,Asian,High School,121531,1,2019
+SENT_0160,Weapons,85,226,F,Asian,Graduate,295789,0,2020
+SENT_0161,Fraud,114,209,F,Asian,High School,266014,0,2015
+SENT_0162,Fraud,105,291,F,Black,College,198927,0,2024
+SENT_0163,White Collar,40,115,M,Black,High School,194996,1,2021
+SENT_0164,Weapons,193,288,M,Black,College,207943,0,2024
+SENT_0165,White Collar,12,79,M,Black,College,372143,1,2015
+SENT_0166,Weapons,164,137,M,Black,College,229975,0,2024
+SENT_0167,Fraud,34,246,F,Asian,College,291828,0,2021
+SENT_0168,Drug,155,179,M,White,College,343695,1,2024
+SENT_0169,Drug,142,101,M,Hispanic,High School,311519,1,2017
+SENT_0170,Fraud,213,13,F,Hispanic,College,236133,1,2023
+SENT_0171,Drug,33,249,F,Hispanic,College,311955,0,2018
+SENT_0172,Violent,113,235,F,White,Graduate,384688,1,2017
+SENT_0173,White Collar,180,282,M,Hispanic,High School,403220,1,2015
+SENT_0174,Drug,227,200,M,Black,College,30595,1,2023
+SENT_0175,Fraud,121,201,F,Hispanic,College,60145,1,2023
+SENT_0176,Fraud,232,120,M,Asian,College,311627,0,2018
+SENT_0177,Weapons,115,64,F,Black,High School,38621,0,2019
+SENT_0178,Drug,16,267,F,White,College,231774,0,2018
+SENT_0179,White Collar,181,13,M,Hispanic,Graduate,435343,0,2015
+SENT_0180,Fraud,230,193,F,Black,Graduate,397937,1,2022
+SENT_0181,Fraud,81,71,F,Asian,High School,51340,1,2017
+SENT_0182,Weapons,150,240,M,White,Graduate,251433,0,2018
+SENT_0183,Fraud,45,200,M,White,College,339738,1,2017
+SENT_0184,White Collar,36,36,M,White,Graduate,74835,1,2017
+SENT_0185,Fraud,52,53,M,Black,Graduate,75497,1,2022
+SENT_0186,Violent,35,291,F,Asian,Graduate,195002,1,2016
+SENT_0187,Weapons,28,94,F,Black,Graduate,139566,0,2019
+SENT_0188,Violent,56,92,F,White,Graduate,400259,0,2020
+SENT_0189,Weapons,25,199,M,White,Graduate,435912,1,2022
+SENT_0190,Violent,176,154,M,White,High School,464962,0,2019
+SENT_0191,White Collar,24,154,F,Black,High School,190226,0,2020
+SENT_0192,Weapons,131,31,F,White,College,380042,1,2021
+SENT_0193,Violent,181,100,M,White,Graduate,376378,1,2015
+SENT_0194,Violent,14,73,F,White,Graduate,277841,0,2016
+SENT_0195,Fraud,225,165,F,Hispanic,High School,242061,0,2021
+SENT_0196,Weapons,139,29,F,Black,College,364749,1,2016
+SENT_0197,White Collar,20,55,M,Asian,College,495115,0,2016
+SENT_0198,Drug,179,297,M,Asian,High School,139079,0,2023
+SENT_0199,Drug,207,33,M,Hispanic,Graduate,360258,1,2019
+SENT_0200,Violent,22,38,F,Black,College,452542,1,2018
+SENT_0201,Drug,215,243,F,White,High School,21913,0,2023
+SENT_0202,Drug,225,208,M,Asian,College,134560,0,2019
+SENT_0203,Drug,207,192,F,Asian,Graduate,399858,1,2016
+SENT_0204,White Collar,197,295,F,Asian,Graduate,48982,1,2022
+SENT_0205,Violent,237,111,M,Hispanic,College,120559,0,2020
+SENT_0206,Fraud,135,274,M,Hispanic,Graduate,399774,1,2017
+SENT_0207,Violent,34,193,F,Asian,High School,147947,1,2015
+SENT_0208,Fraud,147,253,F,White,Graduate,297680,0,2020
+SENT_0209,Drug,146,23,M,Asian,College,393456,1,2021
+SENT_0210,Weapons,234,300,M,Hispanic,Graduate,39569,1,2019
+SENT_0211,White Collar,12,289,F,Hispanic,College,224701,1,2021
+SENT_0212,Violent,160,123,M,Black,College,243782,0,2020
+SENT_0213,Fraud,48,91,M,Black,High School,260493,1,2023
+SENT_0214,White Collar,164,134,F,Asian,Graduate,11730,1,2016
+SENT_0215,White Collar,96,275,M,Asian,Graduate,168534,1,2023
+SENT_0216,Weapons,170,171,F,Asian,High School,1012,0,2023
+SENT_0217,White Collar,110,230,F,White,Graduate,375713,1,2019
+SENT_0218,Weapons,56,67,F,Black,College,191736,0,2019
+SENT_0219,Drug,201,261,M,White,High School,469014,1,2020
+SENT_0220,Weapons,114,155,M,Black,College,93097,1,2016
+SENT_0221,Fraud,48,46,F,Black,Graduate,357523,0,2022
+SENT_0222,Violent,176,56,M,Asian,High School,448809,1,2017
+SENT_0223,Drug,59,259,F,White,Graduate,41780,0,2017
+SENT_0224,Drug,212,107,F,White,High School,431699,1,2021
+SENT_0225,White Collar,114,156,M,Asian,High School,95248,0,2023
+SENT_0226,Weapons,225,267,F,Hispanic,High School,103266,0,2021
+SENT_0227,White Collar,78,164,M,Asian,Graduate,80733,1,2015
+SENT_0228,Violent,143,199,M,Hispanic,High School,345617,1,2015
+SENT_0229,Fraud,213,145,F,Hispanic,High School,86051,1,2020
+SENT_0230,Weapons,134,237,F,Hispanic,College,488598,1,2016
+SENT_0231,Fraud,219,244,F,Black,Graduate,148473,0,2016
+SENT_0232,Fraud,121,70,M,Black,College,213016,0,2020
+SENT_0233,Drug,190,282,M,Hispanic,Graduate,268812,1,2019
+SENT_0234,Violent,224,127,M,White,High School,494483,0,2018
+SENT_0235,Fraud,131,279,M,Black,High School,234538,1,2015
+SENT_0236,Drug,93,108,M,Asian,College,418891,1,2016
+SENT_0237,Fraud,108,29,F,White,Graduate,126987,0,2023
+SENT_0238,Drug,79,120,M,Asian,Graduate,36572,0,2021
+SENT_0239,Violent,53,286,M,White,High School,109068,1,2018
+SENT_0240,Fraud,239,170,M,Hispanic,College,65312,1,2022
+SENT_0241,Fraud,9,276,M,Hispanic,Graduate,342093,1,2023
+SENT_0242,Violent,66,231,F,Asian,College,133888,0,2019
+SENT_0243,White Collar,31,43,F,Hispanic,College,314718,1,2022
+SENT_0244,Violent,212,103,F,Black,Graduate,97729,1,2018
+SENT_0245,Fraud,41,21,M,Asian,High School,266400,1,2021
+SENT_0246,Drug,227,237,M,Hispanic,High School,278594,0,2016
+SENT_0247,Fraud,100,4,F,Black,College,386125,1,2020
+SENT_0248,Violent,9,294,M,White,Graduate,414730,0,2022
+SENT_0249,Drug,28,114,M,Black,College,331255,1,2020
+SENT_0250,White Collar,167,205,F,White,High School,374740,0,2015
+SENT_0251,Drug,50,251,M,Asian,High School,124372,1,2024
+SENT_0252,Weapons,62,184,F,Black,College,437322,1,2021
+SENT_0253,Drug,111,113,M,Hispanic,College,383888,0,2017
+SENT_0254,Violent,136,119,F,Black,High School,375821,1,2022
+SENT_0255,Fraud,40,255,F,Black,High School,436301,0,2015
+SENT_0256,Drug,35,112,M,Hispanic,College,426650,0,2019
+SENT_0257,White Collar,155,248,F,Asian,Graduate,172148,0,2017
+SENT_0258,White Collar,194,181,M,Hispanic,High School,357976,0,2019
+SENT_0259,Weapons,174,94,F,Asian,High School,412992,0,2015
+SENT_0260,Violent,33,186,M,Asian,College,271380,0,2018
+SENT_0261,Violent,179,123,F,Black,College,338478,0,2015
+SENT_0262,White Collar,130,106,F,Hispanic,College,225834,0,2017
+SENT_0263,Weapons,131,191,F,Asian,Graduate,161509,1,2024
+SENT_0264,Drug,77,142,F,Hispanic,Graduate,363028,1,2024
+SENT_0265,Violent,162,297,M,Black,College,480610,1,2015
+SENT_0266,White Collar,227,67,M,White,College,483446,1,2021
+SENT_0267,White Collar,117,87,F,Black,College,88778,1,2016
+SENT_0268,Weapons,171,120,M,Hispanic,High School,297087,1,2021
+SENT_0269,Fraud,217,184,M,White,Graduate,264973,0,2018
+SENT_0270,Fraud,31,178,M,White,Graduate,280876,0,2015
+SENT_0271,White Collar,118,14,M,Hispanic,College,306578,1,2022
+SENT_0272,Drug,168,64,M,Hispanic,College,25351,1,2019
+SENT_0273,Fraud,32,4,F,Asian,Graduate,163821,0,2021
+SENT_0274,Drug,143,84,M,White,High School,368033,0,2016
+SENT_0275,White Collar,144,246,F,White,High School,300081,1,2024
+SENT_0276,Drug,98,130,F,Black,High School,81277,0,2023
+SENT_0277,Weapons,93,122,M,Black,College,62587,1,2023
+SENT_0278,White Collar,223,94,F,Asian,College,214853,1,2022
+SENT_0279,White Collar,68,266,M,Hispanic,High School,76170,0,2016
+SENT_0280,Violent,169,189,F,White,College,32662,0,2020
+SENT_0281,White Collar,58,42,M,Black,College,262407,1,2020
+SENT_0282,Fraud,111,72,M,Asian,Graduate,4957,0,2015
+SENT_0283,White Collar,54,1,F,Black,College,380216,0,2017
+SENT_0284,Fraud,61,243,F,Black,College,290930,0,2018
+SENT_0285,White Collar,90,99,F,Hispanic,High School,216723,1,2022
+SENT_0286,Fraud,167,224,F,Asian,College,167876,0,2016
+SENT_0287,Violent,75,21,M,Asian,Graduate,496765,1,2020
+SENT_0288,Drug,143,10,M,Black,Graduate,494512,1,2024
+SENT_0289,Weapons,77,76,F,Asian,Graduate,466030,1,2015
+SENT_0290,Drug,107,71,M,Hispanic,College,241258,1,2017
+SENT_0291,Drug,179,50,M,White,College,371649,0,2015
+SENT_0292,Fraud,83,237,F,Black,College,474217,0,2023
+SENT_0293,Drug,214,222,M,White,High School,240425,0,2023
+SENT_0294,White Collar,187,96,F,Hispanic,College,148225,0,2018
+SENT_0295,Weapons,209,66,M,Hispanic,Graduate,212202,0,2022
+SENT_0296,Drug,218,118,F,Asian,High School,175006,1,2021
+SENT_0297,Drug,139,185,F,Hispanic,College,305212,0,2024
+SENT_0298,Fraud,93,143,M,Hispanic,High School,356141,1,2021
+SENT_0299,Violent,26,278,M,Black,Graduate,379767,1,2018

@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-04-02T12:42:58.582264",
+  "dataset": {
+    "total_cases": 75,
+    "crime_types": 19,
+    "regions": [
+      "Southeast",
+      "Central",
+      "South",
+      "Midwest",
+      "Northeast",
+      "North",
+      "East",
+      "West"
+    ],
+    "outcomes": {
+      "Guilty": 21,
+      "Acquitted": 18,
+      "Dismissed": 15,
+      "Plea Agreement": 13,
+      "Mistrial": 8
+    }
+  },
+  "model_performance": {
+    "predictions_made": 75,
+    "avg_confidence": 0.5648690118860142,
+    "accuracy_cases": {
+      "total": 75,
+      "correct": 73
+    }
+  },
+  "similar_cases": [
+    {
+      "case_id": "CASE_0005",
+      "title": "Northeast vs Racketeering Case 5",
+      "crime": "Racketeering",
+      "outcome": "Plea Agreement",
+      "similarity": 1.0
+    },
+    {
+      "case_id": "CASE_0021",
+      "title": "Midwest vs Racketeering Case 21",
+      "crime": "Racketeering",
+      "outcome": "Guilty",
+      "similarity": 0.765039133023964
+    },
+    {
+      "case_id": "CASE_0048",
+      "title": "East vs Perjury Case 48",
+      "crime": "Perjury",
+      "outcome": "Acquitted",
+      "similarity": 0.7634371073254891
+    }
+  ],
+  "bias_analysis": {
+    "timestamp": "2026-04-02T12:42:58.574207",
+    "total_cases_analyzed": 75,
+    "demographic_analysis": {
+      "total_cases": 75,
+      "regions_analyzed": {
+        "Southeast": {
+          "guilty_rate": 0.0,
+          "case_count": 8,
+          "demographic_parity": 0.5
+        },
+        "Central": {
+          "guilty_rate": 0.25,
+          "case_count": 8,
+          "demographic_parity": 0.25
+        },
+        "South": {
+          "guilty_rate": 0.375,
+          "case_count": 8,
+          "demographic_parity": 0.125
+        },
+        "Midwest": {
+          "guilty_rate": 0.2222222222222222,
+          "case_count": 9,
+          "demographic_parity": 0.2777777777777778
+        },
+        "Northeast": {
+          "guilty_rate": 0.4375,
+          "case_count": 16,
+          "demographic_parity": 0.0625
+        },
+        "North": {
+          "guilty_rate": 0.3333333333333333,
+          "case_count": 3,
+          "demographic_parity": 0.16666666666666669
+        },
+        "East": {
+          "guilty_rate": 0.2727272727272727,
+          "case_count": 11,
+          "demographic_parity": 0.2272727272727273
+        },
+        "West": {
+          "guilty_rate": 0.25,
+          "case_count": 12,
+          "demographic_parity": 0.25
+        }
+      },
+      "demographic_parity_diff": 0.4375,
+      "equalized_odds_diff": 0.4375,
+      "bias_risk": "HIGH"
+    },
+    "temporal_analysis": {
+      "time_periods": {
+        "2015": {
+          "guilty_rate": 0.6,
+          "case_count": 5
+        },
+        "2016": {
+          "guilty_rate": 0.5,
+          "case_count": 4
+        },
+        "2017": {
+          "guilty_rate": 0.14285714285714285,
+          "case_count": 7
+        },
+        "2018": {
+          "guilty_rate": 0.14285714285714285,
+          "case_count": 14
+        },
+        "2019": {
+          "guilty_rate": 0.5555555555555556,
+          "case_count": 9
+        },
+        "2020": {
+          "guilty_rate": 0.125,
+          "case_count": 8
+        },
+        "2021": {
+          "guilty_rate": 0.25,
+          "case_count": 4
+        },
+        "2022": {
+          "guilty_rate": 0.25,
+          "case_count": 4
+        },
+        "2023": {
+          "guilty_rate": 0.0,
+          "case_count": 7
+        },
+        "2024": {
+          "guilty_rate": 0.38461538461538464,
+          "case_count": 13
+        }
+      },
+      "temporal_trend": -0.21538461538461534,
+      "temporal_bias_score": 0.21538461538461534,
+      "bias_risk": "HIGH"
+    },
+    "overall_bias_risk": "HIGH",
+    "tools_used": {
+      "aif360": true,
+      "fairlearn": true
+    }
+  },
+  "sample_explanations": {
+    "CASE_0001": "Case Outcome Prediction:\n            Predicted Outcome: Dismissed\n            Confidence: 49.70%\n            Similar Cases: CASE_0005, CASE_0021",
+    "CASE_0002": "Case Outcome Prediction:\n            Predicted Outcome: Guilty\n            Confidence: 42.80%\n            Similar Cases: CASE_0005, CASE_0021",
+    "CASE_0003": "Case Outcome Prediction:\n            Predicted Outcome: Acquitted\n            Confidence: 56.17%\n            Similar Cases: CASE_0005, CASE_0021"
+  }
+}

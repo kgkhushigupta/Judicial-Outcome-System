@@ -1,0 +1,251 @@
+case_id,crime,year,region,verdict,sentence_years,evidence_count,witness_count,defendant_age,prosecutor_win_rate
+LEGAL_0000,Fraud,2020,East,Dismissed,2,18,3,38,0.49
+LEGAL_0001,Drug Trafficking,2016,West,Guilty,14,6,2,31,0.49
+LEGAL_0002,Fraud,2023,Central,Guilty,18,16,12,21,0.56
+LEGAL_0003,Assault,2018,West,Guilty,17,1,3,55,0.73
+LEGAL_0004,Murder,2016,Central,Guilty,20,1,1,33,0.8
+LEGAL_0005,Drug Trafficking,2022,West,Guilty,10,16,2,28,0.47
+LEGAL_0006,Fraud,2019,East,Not Guilty,4,9,11,71,0.63
+LEGAL_0007,Fraud,2023,North,Not Guilty,6,6,10,25,0.41
+LEGAL_0008,Theft,2020,East,Guilty,17,7,10,54,0.82
+LEGAL_0009,Assault,2020,North,Guilty,15,20,3,49,0.84
+LEGAL_0010,Fraud,2021,South,Not Guilty,0,7,6,58,0.51
+LEGAL_0011,Assault,2021,East,Dismissed,1,9,4,59,0.46
+LEGAL_0012,Theft,2020,Central,Dismissed,16,13,2,75,0.55
+LEGAL_0013,Fraud,2021,South,Not Guilty,17,14,11,51,0.65
+LEGAL_0014,Assault,2018,South,Guilty,2,11,3,56,0.66
+LEGAL_0015,Assault,2017,East,Guilty,18,10,2,59,0.9
+LEGAL_0016,Murder,2023,Central,Guilty,16,9,4,48,0.55
+LEGAL_0017,Murder,2018,North,Dismissed,13,10,2,22,0.88
+LEGAL_0018,Cybercrime,2024,South,Dismissed,25,18,6,24,0.77
+LEGAL_0019,Cybercrime,2023,South,Guilty,4,15,6,73,0.74
+LEGAL_0020,Cybercrime,2020,West,Guilty,16,5,5,20,0.82
+LEGAL_0021,Drug Trafficking,2022,East,Guilty,11,5,14,37,0.49
+LEGAL_0022,Fraud,2021,Central,Not Guilty,20,4,6,40,0.71
+LEGAL_0023,Fraud,2020,East,Not Guilty,4,14,14,75,0.85
+LEGAL_0024,Fraud,2021,Central,Guilty,6,19,7,37,0.7
+LEGAL_0025,Theft,2016,Central,Dismissed,23,13,2,53,0.66
+LEGAL_0026,Drug Trafficking,2020,North,Dismissed,15,17,11,38,0.75
+LEGAL_0027,Murder,2020,East,Not Guilty,1,20,9,57,0.53
+LEGAL_0028,Theft,2021,South,Guilty,21,18,5,35,0.78
+LEGAL_0029,Drug Trafficking,2018,South,Guilty,25,17,11,43,0.8
+LEGAL_0030,Assault,2024,West,Guilty,13,4,2,59,0.49
+LEGAL_0031,Theft,2016,North,Not Guilty,10,16,9,52,0.68
+LEGAL_0032,Assault,2023,South,Guilty,16,7,7,47,0.41
+LEGAL_0033,Theft,2020,North,Guilty,22,10,6,53,0.92
+LEGAL_0034,Cybercrime,2020,South,Dismissed,11,10,14,21,0.91
+LEGAL_0035,Fraud,2021,North,Dismissed,21,6,6,60,0.43
+LEGAL_0036,Drug Trafficking,2020,West,Dismissed,23,8,0,43,0.89
+LEGAL_0037,Murder,2020,North,Not Guilty,14,1,4,38,0.53
+LEGAL_0038,Cybercrime,2016,North,Dismissed,22,2,7,30,0.69
+LEGAL_0039,Drug Trafficking,2018,South,Dismissed,21,20,11,72,0.57
+LEGAL_0040,Drug Trafficking,2021,East,Not Guilty,19,20,11,39,0.62
+LEGAL_0041,Fraud,2023,West,Dismissed,4,20,1,54,0.85
+LEGAL_0042,Assault,2020,East,Dismissed,0,9,3,24,0.46
+LEGAL_0043,Fraud,2018,South,Dismissed,10,11,14,34,0.91
+LEGAL_0044,Murder,2020,South,Dismissed,15,6,7,26,0.46
+LEGAL_0045,Cybercrime,2017,West,Dismissed,18,17,13,22,0.59
+LEGAL_0046,Drug Trafficking,2022,East,Guilty,11,10,9,54,0.55
+LEGAL_0047,Fraud,2020,South,Not Guilty,14,3,6,27,0.87
+LEGAL_0048,Fraud,2018,East,Not Guilty,4,6,5,46,0.76
+LEGAL_0049,Theft,2022,East,Dismissed,17,18,1,31,0.71
+LEGAL_0050,Assault,2024,North,Guilty,7,20,1,38,0.57
+LEGAL_0051,Theft,2022,Central,Not Guilty,24,1,14,32,0.73
+LEGAL_0052,Fraud,2020,East,Not Guilty,25,16,4,42,0.77
+LEGAL_0053,Drug Trafficking,2016,East,Not Guilty,13,8,3,63,0.78
+LEGAL_0054,Assault,2017,East,Guilty,18,3,6,72,0.46
+LEGAL_0055,Theft,2016,South,Not Guilty,19,17,7,28,0.65
+LEGAL_0056,Murder,2018,South,Dismissed,20,17,15,39,0.88
+LEGAL_0057,Fraud,2021,East,Guilty,15,12,8,35,0.51
+LEGAL_0058,Fraud,2021,South,Not Guilty,12,2,4,47,0.7
+LEGAL_0059,Murder,2020,South,Not Guilty,6,19,11,37,0.83
+LEGAL_0060,Murder,2015,East,Not Guilty,23,20,12,65,0.7
+LEGAL_0061,Cybercrime,2016,East,Dismissed,7,12,8,52,0.6
+LEGAL_0062,Cybercrime,2022,East,Guilty,16,16,13,41,0.78
+LEGAL_0063,Murder,2018,Central,Guilty,1,12,10,74,0.7
+LEGAL_0064,Murder,2021,South,Guilty,0,18,0,71,0.74
+LEGAL_0065,Fraud,2023,West,Guilty,21,4,3,42,0.58
+LEGAL_0066,Murder,2020,Central,Guilty,17,20,9,56,0.48
+LEGAL_0067,Drug Trafficking,2019,North,Guilty,3,12,1,27,0.42
+LEGAL_0068,Murder,2019,West,Dismissed,6,14,13,31,0.94
+LEGAL_0069,Fraud,2016,West,Guilty,10,18,12,19,0.73
+LEGAL_0070,Murder,2019,Central,Dismissed,21,9,10,61,0.74
+LEGAL_0071,Drug Trafficking,2015,South,Dismissed,13,13,6,49,0.57
+LEGAL_0072,Murder,2017,East,Guilty,1,15,2,69,0.67
+LEGAL_0073,Theft,2020,South,Not Guilty,11,18,5,60,0.85
+LEGAL_0074,Fraud,2021,East,Guilty,10,7,8,54,0.6
+LEGAL_0075,Murder,2016,Central,Not Guilty,3,6,0,64,0.52
+LEGAL_0076,Murder,2022,Central,Dismissed,13,2,2,67,0.95
+LEGAL_0077,Drug Trafficking,2019,West,Guilty,11,20,5,73,0.77
+LEGAL_0078,Fraud,2021,North,Not Guilty,15,14,2,67,0.43
+LEGAL_0079,Theft,2024,South,Dismissed,16,17,9,23,0.45
+LEGAL_0080,Cybercrime,2022,North,Not Guilty,16,13,10,65,0.91
+LEGAL_0081,Cybercrime,2018,South,Not Guilty,5,6,5,27,0.75
+LEGAL_0082,Murder,2015,North,Not Guilty,16,4,12,68,0.7
+LEGAL_0083,Theft,2019,East,Not Guilty,2,3,6,39,0.94
+LEGAL_0084,Murder,2017,South,Not Guilty,2,19,4,65,0.84
+LEGAL_0085,Theft,2021,West,Not Guilty,0,4,8,31,0.69
+LEGAL_0086,Cybercrime,2015,South,Guilty,3,13,13,56,0.55
+LEGAL_0087,Fraud,2018,West,Not Guilty,6,19,15,37,0.77
+LEGAL_0088,Cybercrime,2022,East,Guilty,10,4,11,68,0.68
+LEGAL_0089,Cybercrime,2021,West,Guilty,19,9,14,62,0.67
+LEGAL_0090,Fraud,2016,South,Not Guilty,13,17,5,74,0.75
+LEGAL_0091,Theft,2020,Central,Guilty,10,10,13,60,0.59
+LEGAL_0092,Cybercrime,2020,South,Dismissed,12,15,15,67,0.76
+LEGAL_0093,Cybercrime,2016,Central,Not Guilty,8,4,1,23,0.62
+LEGAL_0094,Cybercrime,2021,North,Guilty,24,14,15,75,0.45
+LEGAL_0095,Drug Trafficking,2023,East,Dismissed,25,17,9,34,0.79
+LEGAL_0096,Murder,2016,North,Dismissed,2,9,14,66,0.52
+LEGAL_0097,Murder,2016,South,Guilty,12,3,1,48,0.54
+LEGAL_0098,Fraud,2022,Central,Guilty,12,2,14,45,0.5
+LEGAL_0099,Theft,2019,West,Not Guilty,10,1,8,34,0.56
+LEGAL_0100,Assault,2023,Central,Not Guilty,13,9,14,30,0.86
+LEGAL_0101,Assault,2023,Central,Guilty,1,16,12,23,0.41
+LEGAL_0102,Cybercrime,2018,Central,Dismissed,11,7,6,61,0.63
+LEGAL_0103,Cybercrime,2019,Central,Dismissed,7,10,4,62,0.53
+LEGAL_0104,Drug Trafficking,2016,West,Not Guilty,20,15,8,66,0.91
+LEGAL_0105,Fraud,2020,Central,Dismissed,0,14,2,75,0.65
+LEGAL_0106,Assault,2022,East,Dismissed,20,8,8,26,0.93
+LEGAL_0107,Assault,2018,Central,Guilty,17,17,3,28,0.59
+LEGAL_0108,Fraud,2018,South,Guilty,11,15,0,69,0.68
+LEGAL_0109,Theft,2019,North,Guilty,3,16,1,36,0.66
+LEGAL_0110,Fraud,2015,South,Dismissed,5,8,7,68,0.55
+LEGAL_0111,Drug Trafficking,2021,East,Guilty,13,11,1,45,0.52
+LEGAL_0112,Cybercrime,2017,East,Dismissed,23,14,8,25,0.63
+LEGAL_0113,Cybercrime,2017,Central,Guilty,13,7,3,44,0.5
+LEGAL_0114,Assault,2024,Central,Dismissed,1,11,8,45,0.41
+LEGAL_0115,Cybercrime,2016,North,Dismissed,25,8,9,61,0.54
+LEGAL_0116,Drug Trafficking,2020,East,Dismissed,11,17,11,33,0.66
+LEGAL_0117,Theft,2023,West,Dismissed,5,5,2,67,0.66
+LEGAL_0118,Drug Trafficking,2018,North,Not Guilty,9,3,5,29,0.66
+LEGAL_0119,Cybercrime,2019,West,Not Guilty,13,1,5,71,0.93
+LEGAL_0120,Fraud,2021,Central,Not Guilty,19,7,11,42,0.53
+LEGAL_0121,Drug Trafficking,2023,East,Not Guilty,4,4,11,27,0.58
+LEGAL_0122,Assault,2016,North,Guilty,9,8,8,39,0.48
+LEGAL_0123,Cybercrime,2021,Central,Guilty,11,18,3,54,0.58
+LEGAL_0124,Assault,2018,South,Dismissed,6,10,0,54,0.95
+LEGAL_0125,Theft,2022,South,Dismissed,2,4,0,69,0.85
+LEGAL_0126,Murder,2019,North,Dismissed,10,20,6,61,0.91
+LEGAL_0127,Murder,2021,North,Dismissed,18,13,10,19,0.53
+LEGAL_0128,Assault,2023,West,Not Guilty,8,15,6,57,0.7
+LEGAL_0129,Assault,2017,South,Not Guilty,3,11,10,47,0.82
+LEGAL_0130,Drug Trafficking,2022,North,Dismissed,14,1,6,42,0.68
+LEGAL_0131,Theft,2019,West,Not Guilty,2,5,7,20,0.9
+LEGAL_0132,Cybercrime,2020,East,Dismissed,25,20,7,29,0.64
+LEGAL_0133,Cybercrime,2023,West,Guilty,12,10,15,52,0.95
+LEGAL_0134,Theft,2022,North,Not Guilty,9,4,4,70,0.71
+LEGAL_0135,Fraud,2023,East,Dismissed,10,4,15,43,0.84
+LEGAL_0136,Fraud,2021,Central,Not Guilty,20,15,3,56,0.53
+LEGAL_0137,Theft,2017,North,Not Guilty,4,14,0,29,0.82
+LEGAL_0138,Assault,2022,East,Guilty,4,18,1,54,0.77
+LEGAL_0139,Drug Trafficking,2018,East,Dismissed,19,16,5,53,0.87
+LEGAL_0140,Drug Trafficking,2017,West,Dismissed,8,4,14,61,0.57
+LEGAL_0141,Theft,2021,South,Not Guilty,11,10,15,67,0.52
+LEGAL_0142,Fraud,2022,North,Guilty,17,11,9,66,0.63
+LEGAL_0143,Murder,2022,North,Dismissed,5,7,11,31,0.87
+LEGAL_0144,Cybercrime,2019,Central,Dismissed,20,7,1,55,0.77
+LEGAL_0145,Drug Trafficking,2020,North,Not Guilty,21,4,11,65,0.54
+LEGAL_0146,Theft,2020,East,Guilty,24,13,3,74,0.51
+LEGAL_0147,Cybercrime,2015,North,Guilty,10,20,5,50,0.54
+LEGAL_0148,Murder,2023,East,Not Guilty,14,13,2,75,0.86
+LEGAL_0149,Murder,2019,North,Not Guilty,11,13,11,52,0.47
+LEGAL_0150,Theft,2018,East,Not Guilty,7,20,15,58,0.89
+LEGAL_0151,Assault,2023,West,Guilty,3,15,3,50,0.43
+LEGAL_0152,Cybercrime,2019,Central,Dismissed,4,1,0,28,0.63
+LEGAL_0153,Murder,2023,West,Dismissed,22,18,13,66,0.83
+LEGAL_0154,Fraud,2017,North,Not Guilty,7,14,12,23,0.71
+LEGAL_0155,Fraud,2021,West,Dismissed,12,20,7,74,0.56
+LEGAL_0156,Fraud,2022,West,Dismissed,9,13,8,65,0.95
+LEGAL_0157,Theft,2024,East,Guilty,22,18,6,18,0.59
+LEGAL_0158,Theft,2016,West,Not Guilty,18,6,10,19,0.83
+LEGAL_0159,Theft,2015,West,Guilty,17,3,5,39,0.71
+LEGAL_0160,Cybercrime,2020,Central,Dismissed,2,12,5,65,0.74
+LEGAL_0161,Cybercrime,2017,East,Guilty,0,6,4,64,0.41
+LEGAL_0162,Murder,2018,West,Dismissed,12,18,12,38,0.47
+LEGAL_0163,Theft,2020,South,Not Guilty,17,17,4,55,0.44
+LEGAL_0164,Assault,2017,South,Not Guilty,13,13,12,63,0.69
+LEGAL_0165,Assault,2020,South,Guilty,3,10,11,39,0.74
+LEGAL_0166,Theft,2022,Central,Dismissed,18,7,3,35,0.71
+LEGAL_0167,Cybercrime,2022,South,Dismissed,14,11,8,56,0.46
+LEGAL_0168,Drug Trafficking,2016,North,Guilty,10,4,3,68,0.93
+LEGAL_0169,Assault,2019,Central,Not Guilty,16,7,15,72,0.57
+LEGAL_0170,Cybercrime,2024,South,Guilty,15,2,14,49,0.94
+LEGAL_0171,Cybercrime,2015,Central,Dismissed,22,10,8,21,0.92
+LEGAL_0172,Assault,2023,East,Dismissed,13,14,7,28,0.85
+LEGAL_0173,Murder,2018,West,Guilty,4,9,8,60,0.94
+LEGAL_0174,Murder,2016,East,Guilty,18,6,14,20,0.6
+LEGAL_0175,Theft,2020,North,Dismissed,10,8,9,52,0.47
+LEGAL_0176,Fraud,2015,North,Not Guilty,4,7,15,65,0.56
+LEGAL_0177,Murder,2015,East,Dismissed,2,19,11,72,0.85
+LEGAL_0178,Assault,2016,West,Guilty,9,8,13,35,0.78
+LEGAL_0179,Cybercrime,2019,Central,Not Guilty,1,5,14,29,0.93
+LEGAL_0180,Cybercrime,2019,Central,Dismissed,10,14,0,32,0.85
+LEGAL_0181,Cybercrime,2020,Central,Dismissed,3,20,10,54,0.73
+LEGAL_0182,Theft,2023,West,Dismissed,19,2,8,24,0.53
+LEGAL_0183,Assault,2023,North,Guilty,23,7,1,44,0.9
+LEGAL_0184,Theft,2019,West,Not Guilty,13,19,13,20,0.62
+LEGAL_0185,Drug Trafficking,2023,North,Not Guilty,3,1,4,37,0.43
+LEGAL_0186,Fraud,2019,North,Not Guilty,5,5,12,57,0.45
+LEGAL_0187,Theft,2020,East,Not Guilty,19,20,6,19,0.76
+LEGAL_0188,Murder,2020,West,Dismissed,7,6,0,32,0.9
+LEGAL_0189,Fraud,2016,Central,Dismissed,6,19,0,26,0.54
+LEGAL_0190,Theft,2016,East,Dismissed,13,7,12,28,0.91
+LEGAL_0191,Fraud,2020,West,Dismissed,18,9,1,69,0.67
+LEGAL_0192,Murder,2015,West,Guilty,17,13,9,55,0.6
+LEGAL_0193,Cybercrime,2023,West,Guilty,4,3,6,69,0.73
+LEGAL_0194,Cybercrime,2022,West,Dismissed,20,3,15,67,0.75
+LEGAL_0195,Murder,2022,North,Dismissed,13,6,5,30,0.56
+LEGAL_0196,Assault,2017,West,Not Guilty,7,16,6,58,0.87
+LEGAL_0197,Theft,2024,Central,Dismissed,3,16,0,70,0.43
+LEGAL_0198,Fraud,2018,South,Dismissed,2,20,0,64,0.46
+LEGAL_0199,Theft,2023,West,Dismissed,18,4,5,69,0.8
+LEGAL_0200,Drug Trafficking,2021,South,Not Guilty,4,17,2,71,0.44
+LEGAL_0201,Assault,2020,West,Not Guilty,12,9,5,33,0.89
+LEGAL_0202,Drug Trafficking,2016,Central,Not Guilty,2,4,8,61,0.57
+LEGAL_0203,Murder,2021,South,Guilty,2,18,11,67,0.42
+LEGAL_0204,Assault,2024,Central,Dismissed,0,10,6,29,0.91
+LEGAL_0205,Theft,2019,West,Guilty,5,7,5,46,0.41
+LEGAL_0206,Fraud,2017,West,Not Guilty,3,12,14,32,0.94
+LEGAL_0207,Murder,2024,East,Not Guilty,10,5,8,46,0.92
+LEGAL_0208,Drug Trafficking,2020,Central,Not Guilty,20,14,7,54,0.71
+LEGAL_0209,Drug Trafficking,2016,East,Dismissed,22,18,12,75,0.48
+LEGAL_0210,Murder,2016,East,Dismissed,22,3,9,74,0.78
+LEGAL_0211,Theft,2020,South,Not Guilty,7,15,1,28,0.89
+LEGAL_0212,Murder,2023,North,Guilty,10,14,6,46,0.67
+LEGAL_0213,Murder,2018,Central,Dismissed,6,4,8,72,0.77
+LEGAL_0214,Assault,2015,South,Guilty,15,6,15,44,0.41
+LEGAL_0215,Drug Trafficking,2023,East,Not Guilty,6,20,9,67,0.52
+LEGAL_0216,Theft,2015,South,Not Guilty,21,16,12,34,0.5
+LEGAL_0217,Murder,2018,West,Guilty,7,14,11,60,0.61
+LEGAL_0218,Drug Trafficking,2020,Central,Not Guilty,2,4,3,60,0.53
+LEGAL_0219,Theft,2021,Central,Dismissed,18,5,6,40,0.63
+LEGAL_0220,Cybercrime,2021,South,Not Guilty,9,19,8,74,0.92
+LEGAL_0221,Fraud,2024,West,Guilty,1,17,9,74,0.52
+LEGAL_0222,Theft,2016,West,Guilty,3,17,11,37,0.61
+LEGAL_0223,Cybercrime,2024,East,Not Guilty,16,1,8,52,0.6
+LEGAL_0224,Theft,2020,West,Dismissed,1,16,5,30,0.61
+LEGAL_0225,Assault,2023,Central,Not Guilty,23,11,12,28,0.46
+LEGAL_0226,Theft,2019,Central,Not Guilty,23,5,4,46,0.76
+LEGAL_0227,Theft,2023,North,Not Guilty,17,16,13,27,0.72
+LEGAL_0228,Drug Trafficking,2017,Central,Not Guilty,21,7,13,67,0.76
+LEGAL_0229,Murder,2023,North,Not Guilty,7,6,9,60,0.46
+LEGAL_0230,Cybercrime,2021,West,Not Guilty,24,17,4,55,0.86
+LEGAL_0231,Fraud,2019,South,Guilty,1,1,10,45,0.71
+LEGAL_0232,Drug Trafficking,2015,South,Dismissed,25,18,14,28,0.85
+LEGAL_0233,Drug Trafficking,2018,North,Dismissed,15,5,5,60,0.85
+LEGAL_0234,Drug Trafficking,2018,North,Not Guilty,10,17,2,30,0.44
+LEGAL_0235,Theft,2018,South,Not Guilty,18,13,11,35,0.86
+LEGAL_0236,Drug Trafficking,2020,Central,Dismissed,8,6,0,19,0.76
+LEGAL_0237,Murder,2018,South,Not Guilty,0,13,11,49,0.57
+LEGAL_0238,Assault,2024,West,Dismissed,1,1,4,65,0.78
+LEGAL_0239,Murder,2024,South,Not Guilty,20,9,8,63,0.81
+LEGAL_0240,Cybercrime,2022,North,Dismissed,6,19,2,69,0.92
+LEGAL_0241,Drug Trafficking,2021,West,Guilty,22,20,1,42,0.91
+LEGAL_0242,Drug Trafficking,2019,South,Dismissed,11,11,11,40,0.48
+LEGAL_0243,Theft,2022,Central,Not Guilty,24,15,9,36,0.73
+LEGAL_0244,Drug Trafficking,2017,East,Not Guilty,18,7,7,37,0.64
+LEGAL_0245,Assault,2016,North,Dismissed,15,14,4,24,0.62
+LEGAL_0246,Assault,2023,Central,Dismissed,21,6,0,58,0.75
+LEGAL_0247,Theft,2019,East,Not Guilty,4,7,11,64,0.72
+LEGAL_0248,Drug Trafficking,2020,North,Not Guilty,9,19,11,45,0.9
+LEGAL_0249,Theft,2015,Central,Guilty,4,5,12,35,0.84

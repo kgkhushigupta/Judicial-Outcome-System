@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-04-02T12:47:26.134468",
+  "total_datasets": 5,
+  "datasets": {
+    "dataset_1": {
+      "path": "data/hdfs/input/legal_cases.csv",
+      "rows": 250,
+      "columns": [
+        "case_id",
+        "crime",
+        "year",
+        "region",
+        "verdict",
+        "sentence_years",
+        "evidence_count",
+        "witness_count",
+        "defendant_age",
+        "prosecutor_win_rate"
+      ],
+      "size_mb": 0.013677597045898438
+    },
+    "dataset_2": {
+      "path": "data/hdfs/input/sentencing.csv",
+      "rows": 300,
+      "columns": [
+        "offense_id",
+        "offense_type",
+        "guideline_sentence",
+        "actual_sentence",
+        "defendant_gender",
+        "defendant_race",
+        "defendant_education",
+        "fine_amount",
+        "prison_flag",
+        "year"
+      ],
+      "size_mb": 0.016809463500976562
+    },
+    "dataset_3": {
+      "path": "data/hdfs/input/judge_decisions.csv",
+      "rows": 280,
+      "columns": [
+        "decision_id",
+        "judge_name",
+        "case_type",
+        "plaintiff_won",
+        "decision_time_days",
+        "case_complexity",
+        "judge_experience_years",
+        "appeal_filed",
+        "appeal_success",
+        "year"
+      ],
+      "size_mb": 0.014264106750488281
+    },
+    "dataset_4": {
+      "path": "data/hdfs/input/crime_stats.csv",
+      "rows": 200,
+      "columns": [
+        "stat_id",
+        "region",
+        "crimes_reported",
+        "arrests_made",
+        "convictions",
+        "conviction_rate",
+        "violent_crimes",
+        "property_crimes",
+        "drug_crimes",
+        "year",
+        "population"
+      ],
+      "size_mb": 0.01214599609375
+    },
+    "dataset_5": {
+      "path": "data/hdfs/input/court_proceedings.csv",
+      "rows": 220,
+      "columns": [
+        "proceeding_id",
+        "court_name",
+        "case_number",
+        "filing_date",
+        "trial_date",
+        "hearing_count",
+        "defendant_count",
+        "attorney_count",
+        "document_count",
+        "year"
+      ],
+      "size_mb": 0.014405250549316406
+    }
+  }
+}
