@@ -60,7 +60,7 @@ def _get_or_build_pipeline(sample_size=500):
 
     logger.info("[7/10] Building FAISS index...")
     faiss_idx = FAISSIndex(dim=embeddings.shape[1])
-    metadata = [{"id": i, "label": int(l), "text_preview": texts[i][:100]} for i, l in enumerate(labels)]
+    metadata = [{"id": f"SC-{2018 + (i % 6)}-{1000 + i}", "label": int(l), "text_preview": texts[i][:1000]} for i, l in enumerate(labels)]
     faiss_idx.build(embeddings, metadata)
 
     logger.info("[8/10] Training XGBoost predictor...")

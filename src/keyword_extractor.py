@@ -19,12 +19,13 @@ def extract_keywords(documents, top_n=5):
 
     logger.info("[TF-IDF] Extracting keywords from %d documents.", len(documents))
 
+    max_df_val = 1.0 if len(documents) == 1 else 0.95
     vectorizer = TfidfVectorizer(
         max_features=2000,
         stop_words='english',
         ngram_range=(1, 2),
         min_df=1,
-        max_df=0.95,
+        max_df=max_df_val,
         sublinear_tf=True
     )
 

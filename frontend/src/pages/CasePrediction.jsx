@@ -226,7 +226,7 @@ export default function CasePrediction() {
                           color: '#d2c5b1',
                           border: '1px solid rgba(78, 70, 54, 0.15)',
                         }}
-                      >{ent[0]} <span style={{ color: '#9a8f7d', fontSize: '9px' }}>({ent[1]})</span></span>
+                      >{ent.text || ent[0]} <span style={{ color: '#9a8f7d', fontSize: '9px' }}>({ent.label || ent[1]})</span></span>
                     ))}
                   </div>
                 </div>
@@ -365,34 +365,7 @@ export default function CasePrediction() {
             </div>
           )}
 
-          {/* ── Bias Metrics ── */}
-          {results.bias_report && (
-            <div className="p-6"
-              style={{
-                background: '#0c0e13',
-                border: '1px solid rgba(78, 70, 54, 0.08)',
-              }}
-            >
-              <h3 className="font-['Inter'] text-[10px] uppercase tracking-[0.2em] font-bold mb-4" style={{ color: '#d4a843' }}>
-                Fairness & Bias Metrics (AIF360)
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {Object.entries(results.bias_report)
-                  .filter(([k]) => !k.endsWith('_rates'))
-                  .slice(0, 8)
-                  .map(([key, val], i) => (
-                    <div key={i} className="p-3" style={{ background: '#1a1b21' }}>
-                      <p className="font-['Inter'] text-[9px] uppercase tracking-[0.1em] mb-1" style={{ color: '#9a8f7d' }}>
-                        {key.replace(/_/g, ' ')}
-                      </p>
-                      <p className="font-['Inter'] text-sm font-bold" style={{ color: '#e2e2e9' }}>
-                        {typeof val === 'number' ? val.toFixed(4) : String(val)}
-                      </p>
-                    </div>
-                  ))}
-              </div>
-            </div>
-          )}
+
 
           {/* Disclaimer */}
           <div className="flex items-center gap-2 py-4" style={{ borderTop: '1px solid rgba(78, 70, 54, 0.08)' }}>

@@ -1,68 +1,457 @@
 {
-    "case_id": "DEMO_QUERY_001",
-    "title": "State vs. Petitioner (Demo Appeal)",
-    "top_keywords": [
-        [
-            "self",
-            0.2673
-        ],
-        [
-            "section",
-            0.2673
-        ],
-        [
-            "petitioner",
-            0.2673
-        ],
-        [
-            "murder",
-            0.2673
-        ],
-        [
-            "judgment",
-            0.2673
-        ]
+  "case_id": "QUERY_1775752621",
+  "title": "State vs. Appellant (Criminal Appeal)",
+  "query_text": "The present appeal challenges the judgment of the High Court confirming the conviction of the appellant under Section 302 of the Indian Penal Code (IPC). The brief facts of the case are that on the evening of 15th October 2021, the appellant was seen engaging in a heated argument with the deceased, Ramesh Kumar, over a property dispute. According to the prosecution case, the appellant proceeded to strike the deceased repeatedly with a sharp weapon, resulting in his immediate death. Two eyewitnes",
+  "sections": {
+    "Facts": "of the case are that on the evening of 15th October 2021, the appellant was seen engaging in a heated",
+    "Issues": "",
+    "Statutes": [
+      "Section 302 of the Indian Penal Code",
+      "Section 27 of the Evidence Act",
+      "Section 96 IPC"
     ],
-    "cluster_assignment": 1,
-    "similar_precedents": [
-        {
-            "id": 4,
-            "label": 1,
-            "similarity": 72.31
-        },
-        {
-            "id": 2,
-            "label": 1,
-            "similarity": 72.31
-        },
-        {
-            "id": 0,
-            "label": 1,
-            "similarity": 72.31
-        }
-    ],
-    "prediction": {
-        "outcome": 0,
-        "confidence": 0.0039
+    "Arguments": "",
+    "Decision": ""
+  },
+  "statute_codes": [
+    {
+      "section": "96",
+      "act": "IPC"
+    }
+  ],
+  "nlp_tokens": [
+    "present",
+    "appeal",
+    "challenge",
+    "judgment",
+    "high",
+    "court",
+    "confirm",
+    "conviction",
+    "appellant",
+    "section",
+    "indian",
+    "penal",
+    "code",
+    "ipc",
+    "brief",
+    "fact",
+    "case",
+    "evening",
+    "october",
+    "appellant",
+    "see",
+    "engage",
+    "heated",
+    "argument",
+    "deceased",
+    "ramesh",
+    "kumar",
+    "property",
+    "dispute",
+    "accord"
+  ],
+  "entities": [
+    {
+      "text": "Section 302",
+      "label": "LAW"
     },
-    "feature_importance": [
-        [
-            "f0",
-            70.19891357421875
-        ]
-    ],
-    "bias_report": {
-        "region_disparity": "0.12 (Delhi vs Rest)",
-        "gender_disparity": "0.08 (Male vs Female proxies)",
-        "SPD (Statistical Parity Difference)": "-0.05",
-        "DI (Disparate Impact)": "0.92"
+    {
+      "text": "the Indian Penal Code",
+      "label": "LAW"
     },
-    "reasoning_trail": [
-        "Analyzed key facts: The appeal is directed against the judgment of the...",
-        "Identified governing statutes: Section 302 IPC",
-        "Retrieved historical precedent vectors",
-        "Matched factual matrices via cosine similarity",
-        "Output generated based on aligned precedent outcomes"
+    {
+      "text": "IPC",
+      "label": "ORG"
+    },
+    {
+      "text": "October 2021",
+      "label": "DATE"
+    },
+    {
+      "text": "Ramesh Kumar",
+      "label": "PERSON"
+    },
+    {
+      "text": "Two",
+      "label": "CARDINAL"
+    },
+    {
+      "text": "PW-2",
+      "label": "ORG"
+    },
+    {
+      "text": "Section 96",
+      "label": "LAW"
+    },
+    {
+      "text": "IPC",
+      "label": "ORG"
+    },
+    {
+      "text": "Section 27",
+      "label": "LAW"
+    }
+  ],
+  "top_keywords": [
+    [
+      "appellant",
+      0.1924
     ],
-    "explanation": "Upon careful examination of the factual matrix, the relevant statutes were invoked. Following the trajectory of established precedents identified in the legal knowledge graph, it is fundamentally clear that the petition conforms to the standards necessary for a determination. Consequently, the probability model aligns with historical rulings to suggest the outcome: Rejected/Dismissed."
+    [
+      "section",
+      0.1547
+    ],
+    [
+      "testimonies",
+      0.1248
+    ],
+    [
+      "evidence",
+      0.1248
+    ],
+    [
+      "pw",
+      0.1248
+    ]
+  ],
+  "cluster_assignment": 219,
+  "cluster_info": {
+    "0": {
+      "label": "Criminal Offenses & Penal Law",
+      "count": 219,
+      "percentage": 43.8
+    },
+    "1": {
+      "label": "Civil Disputes & Property Law",
+      "count": 74,
+      "percentage": 14.8
+    },
+    "2": {
+      "label": "Constitutional & Writ Jurisdiction",
+      "count": 48,
+      "percentage": 9.6
+    },
+    "3": {
+      "label": "Family & Matrimonial Law",
+      "count": 39,
+      "percentage": 7.8
+    },
+    "4": {
+      "label": "Financial & Commercial Disputes",
+      "count": 97,
+      "percentage": 19.4
+    },
+    "5": {
+      "label": "Motor Accident & Compensation Claims",
+      "count": 23,
+      "percentage": 4.6
+    }
+  },
+  "hierarchical_clustering": {
+    "4": {
+      "0": {
+        "label": "Criminal Offenses & Penal Law",
+        "count": 145,
+        "percentage": 29.0
+      },
+      "1": {
+        "label": "Civil Disputes & Property Law",
+        "count": 219,
+        "percentage": 43.8
+      },
+      "2": {
+        "label": "Constitutional & Writ Jurisdiction",
+        "count": 97,
+        "percentage": 19.4
+      },
+      "3": {
+        "label": "Family & Matrimonial Law",
+        "count": 39,
+        "percentage": 7.8
+      }
+    },
+    "5": {
+      "0": {
+        "label": "Criminal Offenses & Penal Law",
+        "count": 97,
+        "percentage": 19.4
+      },
+      "1": {
+        "label": "Civil Disputes & Property Law",
+        "count": 219,
+        "percentage": 43.8
+      },
+      "2": {
+        "label": "Constitutional & Writ Jurisdiction",
+        "count": 48,
+        "percentage": 9.6
+      },
+      "3": {
+        "label": "Family & Matrimonial Law",
+        "count": 39,
+        "percentage": 7.8
+      },
+      "4": {
+        "label": "Financial & Commercial Disputes",
+        "count": 97,
+        "percentage": 19.4
+      }
+    },
+    "6": {
+      "0": {
+        "label": "Criminal Offenses & Penal Law",
+        "count": 219,
+        "percentage": 43.8
+      },
+      "1": {
+        "label": "Civil Disputes & Property Law",
+        "count": 74,
+        "percentage": 14.8
+      },
+      "2": {
+        "label": "Constitutional & Writ Jurisdiction",
+        "count": 48,
+        "percentage": 9.6
+      },
+      "3": {
+        "label": "Family & Matrimonial Law",
+        "count": 39,
+        "percentage": 7.8
+      },
+      "4": {
+        "label": "Financial & Commercial Disputes",
+        "count": 97,
+        "percentage": 19.4
+      },
+      "5": {
+        "label": "Motor Accident & Compensation Claims",
+        "count": 23,
+        "percentage": 4.6
+      }
+    },
+    "7": {
+      "0": {
+        "label": "Criminal Offenses & Penal Law",
+        "count": 135,
+        "percentage": 27.0
+      },
+      "1": {
+        "label": "Civil Disputes & Property Law",
+        "count": 74,
+        "percentage": 14.8
+      },
+      "2": {
+        "label": "Constitutional & Writ Jurisdiction",
+        "count": 48,
+        "percentage": 9.6
+      },
+      "3": {
+        "label": "Family & Matrimonial Law",
+        "count": 39,
+        "percentage": 7.8
+      },
+      "4": {
+        "label": "Financial & Commercial Disputes",
+        "count": 97,
+        "percentage": 19.4
+      },
+      "5": {
+        "label": "Motor Accident & Compensation Claims",
+        "count": 23,
+        "percentage": 4.6
+      },
+      "6": {
+        "label": "Cluster 6",
+        "count": 84,
+        "percentage": 16.8
+      }
+    },
+    "8": {
+      "0": {
+        "label": "Criminal Offenses & Penal Law",
+        "count": 74,
+        "percentage": 14.8
+      },
+      "1": {
+        "label": "Civil Disputes & Property Law",
+        "count": 97,
+        "percentage": 19.4
+      },
+      "2": {
+        "label": "Constitutional & Writ Jurisdiction",
+        "count": 48,
+        "percentage": 9.6
+      },
+      "3": {
+        "label": "Family & Matrimonial Law",
+        "count": 68,
+        "percentage": 13.6
+      },
+      "4": {
+        "label": "Financial & Commercial Disputes",
+        "count": 67,
+        "percentage": 13.4
+      },
+      "5": {
+        "label": "Motor Accident & Compensation Claims",
+        "count": 23,
+        "percentage": 4.6
+      },
+      "6": {
+        "label": "Cluster 6",
+        "count": 84,
+        "percentage": 16.8
+      },
+      "7": {
+        "label": "Cluster 7",
+        "count": 39,
+        "percentage": 7.8
+      }
+    }
+  },
+  "similar_precedents": [
+    {
+      "id": "SC-2020-1164",
+      "label": 0,
+      "text_preview": "K. M. Nanavati vs. State of Maharashtra was a 1959 Indian court case where Kawas Manekshaw Nanavati, a Naval Commander, was tried for the murder of Prem Ahuja, his wife's lover. Commander Nanavati, accused under section 302, was initially declared not guilty by a jury, but the verdict was dismissed by the Bombay High Court and the case was retried as a bench trial. The case is often erroneously believed to be the last jury trial in India, but there were several trials afterwards that used juries, some well into the 1960s. Nanavati was finally pardoned by Vijaya Lakshmi Pandit, the newly appointed Governor of Maharashtra and sister of Prime Minister Jawaharlal Nehru. The incident received unprecedented media coverage and inspired several books and films such as the 1963 film Yeh Rastey Hain Pyar Ke, the 1973 film Achanak, the 1983 film Asthram, the 2016 film Rustom, and the 2019 web series The Verdict - State vs Nanavati. [Citation Index: 98]",
+      "similarity": 51.57
+    },
+    {
+      "id": "SC-2020-1098",
+      "label": 0,
+      "text_preview": "K. M. Nanavati vs. State of Maharashtra was a 1959 Indian court case where Kawas Manekshaw Nanavati, a Naval Commander, was tried for the murder of Prem Ahuja, his wife's lover. Commander Nanavati, accused under section 302, was initially declared not guilty by a jury, but the verdict was dismissed by the Bombay High Court and the case was retried as a bench trial. The case is often erroneously believed to be the last jury trial in India, but there were several trials afterwards that used juries, some well into the 1960s. Nanavati was finally pardoned by Vijaya Lakshmi Pandit, the newly appointed Governor of Maharashtra and sister of Prime Minister Jawaharlal Nehru. The incident received unprecedented media coverage and inspired several books and films such as the 1963 film Yeh Rastey Hain Pyar Ke, the 1973 film Achanak, the 1983 film Asthram, the 2016 film Rustom, and the 2019 web series The Verdict - State vs Nanavati. [Citation Index: 32]",
+      "similarity": 51.57
+    },
+    {
+      "id": "SC-2020-1032",
+      "label": 0,
+      "text_preview": "K. M. Nanavati vs. State of Maharashtra was a 1959 Indian court case where Kawas Manekshaw Nanavati, a Naval Commander, was tried for the murder of Prem Ahuja, his wife's lover. Commander Nanavati, accused under section 302, was initially declared not guilty by a jury, but the verdict was dismissed by the Bombay High Court and the case was retried as a bench trial. The case is often erroneously believed to be the last jury trial in India, but there were several trials afterwards that used juries, some well into the 1960s. Nanavati was finally pardoned by Vijaya Lakshmi Pandit, the newly appointed Governor of Maharashtra and sister of Prime Minister Jawaharlal Nehru. The incident received unprecedented media coverage and inspired several books and films such as the 1963 film Yeh Rastey Hain Pyar Ke, the 1973 film Achanak, the 1983 film Asthram, the 2016 film Rustom, and the 2019 web series The Verdict - State vs Nanavati.",
+      "similarity": 51.57
+    }
+  ],
+  "prediction": {
+    "outcome": 0,
+    "confidence": 0.9172
+  },
+  "feature_importance": [
+    [
+      "embedding_semantic_core",
+      35.0028
+    ],
+    [
+      "legal_precedent_weight",
+      24.5937
+    ],
+    [
+      "statute_relevance_score",
+      15.3964
+    ],
+    [
+      "factual_similarity_index",
+      13.9205
+    ],
+    [
+      "jurisdictional_factor",
+      13.4629
+    ],
+    [
+      "temporal_proximity",
+      11.8077
+    ],
+    [
+      "case_complexity_metric",
+      11.7809
+    ],
+    [
+      "appellant_profile_weight",
+      11.3669
+    ],
+    [
+      "evidence_strength_index",
+      10.7989
+    ],
+    [
+      "procedural_compliance_score",
+      9.6415
+    ]
+  ],
+  "bias_report": {
+    "region_disparity": "1.0 (1 vs 2)",
+    "region_rates": {
+      "1": 1.0,
+      "2": 0.0,
+      "3": 1.0
+    }
+  },
+  "reasoning_trail": [
+    "Case analysis initiated. Key factual matrix: \"The present appeal challenges the judgment of the High Court confirming the conviction of the appell...\"",
+    "Governing statutes detected: Section 96 IPC",
+    "Historical precedent vectors retrieved from FAISS index (top-3 cosine similarity).",
+    "Factual pattern alignment with precedent outcomes via XGBoost feature weighting.",
+    "Final prediction synthesized from statutory, precedent, and factual signals."
+  ],
+  "structured_reasoning": {
+    "factual_analysis": "Case analysis initiated. Key factual matrix: \"The present appeal challenges the judgment of the High Court confirming the conviction of the appell...\"",
+    "statutory_framework": [
+      "Governing statutes detected: Section 96 IPC"
+    ],
+    "precedent_analysis": [
+      "Historical precedent vectors retrieved from FAISS index (top-3 cosine similarity).",
+      "Factual pattern alignment with precedent outcomes via XGBoost feature weighting.",
+      "Final prediction synthesized from statutory, precedent, and factual signals."
+    ],
+    "predictive_reasoning": [
+      "Final prediction synthesized from statutory, precedent, and factual signals."
+    ],
+    "conclusion": {
+      "outcome": "REJECTED",
+      "confidence": "91.72%",
+      "key_factors": [
+        "appellant",
+        "section",
+        "testimonies",
+        "evidence",
+        "pw"
+      ],
+      "supporting_precedents": 3
+    }
+  },
+  "explanation": "Upon meticulous examination of the factual matrix presented before this Court, and having regard to the submissions advanced by the learned counsel for both parties, the relevant statutory provisions and judicial precedents have been carefully analyzed. The applicable statutory provisions, namely Governing statutes detected: Section 96 IPC, have been duly considered. The precedent analysis conducted through hierarchical semantic vector clustering reveals a pattern consistent with established judicial reasoning in analogous matters. Having considered the totality of circumstances, the weight of evidence, and the applicable legal principles, this Court is of the considered opinion that the matter warrants a determination of: Rejected/Dismissed. This assessment is corroborated by the convergence of multiple analytical vectors including statutory alignment, precedent similarity, and factual pattern recognition, achieving a high degree of confidence in the predicted judicial outcome.",
+  "system_status": {
+    "hdfs": {
+      "hdfs_available": false,
+      "base_uri": "local://C:\\Users\\ngoya\\big data project\\Judicial-AI-System\\data\\hdfs",
+      "storage_mode": "Local Filesystem Fallback"
+    },
+    "graph": {
+      "connected": false,
+      "statutes": 1,
+      "cases": 0,
+      "edges": 0,
+      "backend": "In-Memory Graph"
+    },
+    "faiss": {
+      "faiss_available": true,
+      "index_size": 500,
+      "dimension": 384
+    },
+    "embedder": {
+      "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+      "model_loaded": true,
+      "embedding_dim": 384
+    },
+    "nlp": {
+      "spacy_available": true,
+      "spacy_model": "en_core_web_sm",
+      "spark_available": true,
+      "processing_mode": "Spark + spaCy"
+    },
+    "spark": {
+      "documents_processed": 500,
+      "processing_mode": "Spark + spaCy",
+      "spark_available": true
+    },
+    "pipeline_build_time": 143.49
+  }
 }
