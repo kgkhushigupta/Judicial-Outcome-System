@@ -11,12 +11,16 @@ except ImportError:
     logger.warning("[XGBoost] xgboost not available. Using logistic regression fallback.")
 
 
+# -----------------------------
+# TRAINING
+# -----------------------------
 def train_predictor(embeddings, labels):
     X = np.array(embeddings, dtype=np.float32)
     y = np.array(labels, dtype=np.float32)
 
     if XGBOOST_AVAILABLE:
         dtrain = xgb.DMatrix(X, label=y)
+
         params = {
             'objective': 'binary:logistic',
             'eval_metric': 'logloss',
@@ -27,16 +31,29 @@ def train_predictor(embeddings, labels):
             'seed': 42,
             'verbosity': 0
         }
-        bst = xgb.train(params, dtrain, num_boost_round=100,
-                        evals=[(dtrain, "train")], verbose_eval=False)
 
+        bst = xgb.train(
+            params,
+            dtrain,
+            num_boost_round=100,
+            evals=[(dtrain, "train")],
+            verbose_eval=False
+        )
+
+        # Feature importance
         importance = bst.get_score(importance_type='gain')
         top_features = sorted(importance.items(), key=lambda x: x[1], reverse=True)[:10]
 
         feature_labels = [
-            "embedding_semantic_core", "legal_precedent_weight", "statute_relevance_score",
-            "factual_similarity_index", "jurisdictional_factor", "temporal_proximity",
-            "case_complexity_metric", "appellant_profile_weight", "evidence_strength_index",
+            "embedding_semantic_core",
+            "legal_precedent_weight",
+            "statute_relevance_score",
+            "factual_similarity_index",
+            "jurisdictional_factor",
+            "temporal_proximity",
+            "case_complexity_metric",
+            "appellant_profile_weight",
+            "evidence_strength_index",
             "procedural_compliance_score"
         ]
 
@@ -45,13 +62,16 @@ def train_predictor(embeddings, labels):
             label = feature_labels[i] if i < len(feature_labels) else feat
             labeled_features.append((label, round(float(gain), 4)))
 
+        # Training accuracy
         train_pred = bst.predict(dtrain)
         accuracy = np.mean((train_pred > 0.5).astype(int) == y)
         logger.info("[XGBoost] Training accuracy: %.4f", accuracy)
 
         return bst, labeled_features
+
     else:
         from sklearn.linear_model import LogisticRegression
+
         clf = LogisticRegression(max_iter=1000, random_state=42)
         clf.fit(X, y)
 
@@ -61,25 +81,36 @@ def train_predictor(embeddings, labels):
         coefs = np.abs(clf.coef_[0])
         top_idx = np.argsort(coefs)[-5:][::-1]
         features = [(f"feature_{i}", round(float(coefs[i]), 4)) for i in top_idx]
+
         return clf, features
 
 
+# -----------------------------
+# PREDICTION (FIXED)
+# -----------------------------
 def predict_outcome(model, query_embedding):
     query = np.array(query_embedding, dtype=np.float32).reshape(1, -1)
 
+    # Get probability
     if XGBOOST_AVAILABLE and hasattr(model, 'save_model'):
         dquery = xgb.DMatrix(query)
         prob = float(model.predict(dquery)[0])
     else:
         prob = float(model.predict_proba(query)[0][1])
 
+    # Determine label
     label = 1 if prob >= 0.5 else 0
-    raw_conf = prob if label == 1 else 1 - prob
-    
-    # Isotonic/Platt Scaling Simulation (Calibrates 0.5-0.6 logic boundaries to realistic 80-98% presentation confidence)
-    confidence = round(0.85 + (min(raw_conf - 0.5, 0.5) * 1.5), 4)
 
-    logger.info("[Predictor] Outcome: %s, Confidence: %.2f%%",
-               "ACCEPTED" if label == 1 else "REJECTED", confidence * 100)
+    # ✅ FIXED: Proper confidence (0–100%)
+    confidence = prob if label == 1 else (1 - prob)
+
+    # Convert to percentage
+    confidence = round(confidence * 100, 2)
+
+    logger.info(
+        "[Predictor] Outcome: %s, Confidence: %.2f%%",
+        "ACCEPTED" if label == 1 else "REJECTED",
+        confidence
+    )
 
     return label, confidence

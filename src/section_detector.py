@@ -5,19 +5,19 @@ logger = logging.getLogger(__name__)
 
 SECTION_PATTERNS = {
     "Facts": [
-        r"(?i)(?:facts?\s+of\s+the\s+case|brief\s+facts|factual\s+matrix|factual\s+background|prosecution\s+case)",
+        r"(?:facts?\s+of\s+the\s+case|brief\s+facts|factual\s+matrix|factual\s+background|prosecution\s+case)",
     ],
     "Issues": [
-        r"(?i)(?:issue[s]?\s+(?:framed|raised|involved)|question[s]?\s+of\s+law|point[s]?\s+for\s+determination)",
+        r"(?:issue[s]?\s+(?:framed|raised|involved)|question[s]?\s+of\s+law|point[s]?\s+for\s+determination)",
     ],
     "Statutes": [
-        r"(?i)(?:section\s+\d+[A-Z]?\s+(?:of\s+)?(?:IPC|CrPC|CPC|Constitution|Act))",
+        r"(?:section\s+\d+[A-Z]?\s+(?:of\s+)?(?:IPC|CrPC|CPC|Constitution|Act))",
     ],
     "Arguments": [
-        r"(?i)(?:learned\s+counsel|submissions?\s+of|contended\s+that|argued\s+that|appellant\s+contends)",
+        r"(?:learned\s+counsel|submissions?\s+of|contended\s+that|argued\s+that|appellant\s+contends)",
     ],
     "Decision": [
-        r"(?i)(?:appeal\s+is\s+(?:dismissed|allowed)|petition\s+is\s+(?:accepted|rejected|dismissed|allowed)|order(?:ed)?\s+accordingly|disposed\s+of|conviction\s+is\s+(?:upheld|set\s+aside)|acquitted|sentenced)",
+        r"(?:appeal\s+is\s+(?:dismissed|allowed)|petition\s+is\s+(?:accepted|rejected|dismissed|allowed)|order(?:ed)?\s+accordingly|disposed\s+of|conviction\s+is\s+(?:upheld|set\s+aside)|acquitted|sentenced)",
     ]
 }
 
@@ -28,9 +28,11 @@ def detect_sections(text):
 
     sections = {}
 
-    sections["Facts"] = _extract_section(text,
-        r"(?i)(?:facts?\s+of\s+the\s+case|brief\s+facts|factual\s+matrix)",
-        r"(?i)(?:issue[s]?\s+framed|submissions?|decision|judgment|arguments?)")
+    sections["Facts"] = _extract_section(
+        text,
+        r"(?:facts?\s+of\s+the\s+case|brief\s+facts|factual\s+matrix)",
+        r"(?:issue[s]?\s+framed|submissions?|decision|judgment|arguments?)"
+    )
 
     if not sections["Facts"]:
         sentences = text.split(".")
@@ -40,9 +42,11 @@ def detect_sections(text):
                 fact_sentences.append(s.strip())
         sections["Facts"] = ". ".join(fact_sentences[:5])
 
-    sections["Issues"] = _extract_section(text,
-        r"(?i)(?:issue[s]?\s+framed|question[s]?\s+of\s+law|point[s]?\s+for\s+determination)",
-        r"(?i)(?:decision|judgment|submission|argument)")
+    sections["Issues"] = _extract_section(
+        text,
+        r"(?:issue[s]?\s+framed|question[s]?\s+of\s+law|point[s]?\s+for\s+determination)",
+        r"(?:decision|judgment|submission|argument)"
+    )
 
     statute_matches = re.findall(
         r"Section\s+\d+[A-Z]?\s+(?:of\s+)?(?:the\s+)?(?:Indian\s+Penal\s+Code|IPC|CrPC|CPC|Constitution|"
@@ -51,30 +55,36 @@ def detect_sections(text):
         r"Negotiable\s+Instruments?\s+Act|Prevention\s+of\s+Illicit\s+Traffic|Evidence\s+Act)",
         text, re.IGNORECASE
     )
+
     if not statute_matches:
         statute_matches = re.findall(r"Section\s+\d+[A-Z]?\s+\w+", text, re.IGNORECASE)
+
     sections["Statutes"] = list(set(statute_matches))
 
-    sections["Arguments"] = _extract_section(text,
-        r"(?i)(?:learned\s+counsel|submissions?\s+of|contended\s+that)",
-        r"(?i)(?:decision|judgment|this\s+court\s+(?:finds|holds|observes))")
+    sections["Arguments"] = _extract_section(
+        text,
+        r"(?:learned\s+counsel|submissions?\s+of|contended\s+that)",
+        r"(?:decision|judgment|this\s+court\s+(?:finds|holds|observes))"
+    )
 
     decision_patterns = [
-        r"(?i)(appeal\s+is\s+(?:dismissed|allowed)[\.\s])",
-        r"(?i)(petition\s+is\s+(?:accepted|rejected|dismissed|allowed)[\.\s])",
-        r"(?i)(conviction\s+is\s+(?:upheld|set\s+aside|confirmed)[\.\s])",
-        r"(?i)(accused\s+is\s+(?:acquitted|convicted)[\.\s])",
-        r"(?i)(decree\s+(?:for\s+\w+\s+)?is\s+(?:granted|decreed|dismissed)[\.\s])",
-        r"(?i)(claim\s+petition\s+is\s+(?:allowed|dismissed)[\.\s])",
-        r"(?i)(writ\s+petition\s+is\s+(?:dismissed|allowed)[\.\s])",
-        r"(?i)(detenue?\s+is\s+directed\s+to\s+be\s+released[\.\s])",
+        r"(appeal\s+is\s+(?:dismissed|allowed)[\.\s])",
+        r"(petition\s+is\s+(?:accepted|rejected|dismissed|allowed)[\.\s])",
+        r"(conviction\s+is\s+(?:upheld|set\s+aside|confirmed)[\.\s])",
+        r"(accused\s+is\s+(?:acquitted|convicted)[\.\s])",
+        r"(decree\s+(?:for\s+\w+\s+)?is\s+(?:granted|decreed|dismissed)[\.\s])",
+        r"(claim\s+petition\s+is\s+(?:allowed|dismissed)[\.\s])",
+        r"(writ\s+petition\s+is\s+(?:dismissed|allowed)[\.\s])",
+        r"(detenue?\s+is\s+directed\s+to\s+be\s+released[\.\s])",
     ]
+
     decision_text = ""
     for pattern in decision_patterns:
-        match = re.search(pattern, text)
+        match = re.search(pattern, text, re.IGNORECASE)
         if match:
             decision_text = match.group(1).strip()
             break
+
     sections["Decision"] = decision_text
 
     return sections
@@ -90,12 +100,15 @@ def _extract_section(text, start_pattern, end_pattern):
 def extract_statute_codes(text):
     codes = []
     pattern = r"Section\s+(\d+[A-Z]?)\s+(?:of\s+)?(?:the\s+)?(\w[\w\s]*?)(?:\.|,|\s+and\s+|\s+read)"
+
     for match in re.finditer(pattern, text, re.IGNORECASE):
         section_num = match.group(1)
         act_name = match.group(2).strip()
         codes.append({"section": section_num, "act": act_name})
+
     if not codes:
         simple_pattern = r"Section\s+(\d+[A-Z]?)\s+(\w+)"
         for match in re.finditer(simple_pattern, text, re.IGNORECASE):
             codes.append({"section": match.group(1), "act": match.group(2)})
+
     return codes

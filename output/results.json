@@ -1,5 +1,5 @@
 {
-  "case_id": "QUERY_1775752621",
+  "case_id": "QUERY_1776312003",
   "title": "State vs. Appellant (Criminal Appeal)",
   "query_text": "The present appeal challenges the judgment of the High Court confirming the conviction of the appellant under Section 302 of the Indian Penal Code (IPC). The brief facts of the case are that on the evening of 15th October 2021, the appellant was seen engaging in a heated argument with the deceased, Ramesh Kumar, over a property dispute. According to the prosecution case, the appellant proceeded to strike the deceased repeatedly with a sharp weapon, resulting in his immediate death. Two eyewitnes",
   "sections": {
@@ -53,32 +53,28 @@
   ],
   "entities": [
     {
+      "text": "the High Court",
+      "label": "ORG"
+    },
+    {
       "text": "Section 302",
       "label": "LAW"
     },
     {
       "text": "the Indian Penal Code",
-      "label": "LAW"
+      "label": "ORG"
     },
     {
       "text": "IPC",
       "label": "ORG"
     },
     {
-      "text": "October 2021",
-      "label": "DATE"
-    },
-    {
-      "text": "Ramesh Kumar",
-      "label": "PERSON"
+      "text": "Kumar",
+      "label": "GPE"
     },
     {
       "text": "Two",
       "label": "CARDINAL"
-    },
-    {
-      "text": "PW-2",
-      "label": "ORG"
     },
     {
       "text": "Section 96",
@@ -90,6 +86,10 @@
     },
     {
       "text": "Section 27",
+      "label": "LAW"
+    },
+    {
+      "text": "Evidence Act",
       "label": "LAW"
     }
   ],
@@ -107,273 +107,273 @@
       0.1248
     ],
     [
-      "evidence",
+      "pw",
       0.1248
     ],
     [
-      "pw",
+      "defense",
       0.1248
     ]
   ],
-  "cluster_assignment": 219,
+  "cluster_assignment": 90,
   "cluster_info": {
     "0": {
       "label": "Criminal Offenses & Penal Law",
-      "count": 219,
-      "percentage": 43.8
+      "count": 90,
+      "percentage": 18.0
     },
     "1": {
       "label": "Civil Disputes & Property Law",
-      "count": 74,
-      "percentage": 14.8
+      "count": 100,
+      "percentage": 20.0
     },
     "2": {
       "label": "Constitutional & Writ Jurisdiction",
-      "count": 48,
-      "percentage": 9.6
+      "count": 65,
+      "percentage": 13.0
     },
     "3": {
       "label": "Family & Matrimonial Law",
-      "count": 39,
-      "percentage": 7.8
+      "count": 81,
+      "percentage": 16.2
     },
     "4": {
       "label": "Financial & Commercial Disputes",
-      "count": 97,
-      "percentage": 19.4
+      "count": 113,
+      "percentage": 22.6
     },
     "5": {
       "label": "Motor Accident & Compensation Claims",
-      "count": 23,
-      "percentage": 4.6
+      "count": 51,
+      "percentage": 10.2
     }
   },
   "hierarchical_clustering": {
     "4": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 145,
-        "percentage": 29.0
+        "count": 216,
+        "percentage": 43.2
       },
       "1": {
         "label": "Civil Disputes & Property Law",
-        "count": 219,
-        "percentage": 43.8
+        "count": 113,
+        "percentage": 22.6
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 97,
-        "percentage": 19.4
+        "count": 90,
+        "percentage": 18.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 39,
-        "percentage": 7.8
+        "count": 81,
+        "percentage": 16.2
       }
     },
     "5": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 97,
-        "percentage": 19.4
+        "count": 116,
+        "percentage": 23.2
       },
       "1": {
         "label": "Civil Disputes & Property Law",
-        "count": 219,
-        "percentage": 43.8
+        "count": 100,
+        "percentage": 20.0
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 48,
-        "percentage": 9.6
+        "count": 90,
+        "percentage": 18.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 39,
-        "percentage": 7.8
+        "count": 81,
+        "percentage": 16.2
       },
       "4": {
         "label": "Financial & Commercial Disputes",
-        "count": 97,
-        "percentage": 19.4
+        "count": 113,
+        "percentage": 22.6
       }
     },
     "6": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 219,
-        "percentage": 43.8
+        "count": 90,
+        "percentage": 18.0
       },
       "1": {
         "label": "Civil Disputes & Property Law",
-        "count": 74,
-        "percentage": 14.8
+        "count": 100,
+        "percentage": 20.0
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 48,
-        "percentage": 9.6
+        "count": 65,
+        "percentage": 13.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 39,
-        "percentage": 7.8
+        "count": 81,
+        "percentage": 16.2
       },
       "4": {
         "label": "Financial & Commercial Disputes",
-        "count": 97,
-        "percentage": 19.4
+        "count": 113,
+        "percentage": 22.6
       },
       "5": {
         "label": "Motor Accident & Compensation Claims",
-        "count": 23,
-        "percentage": 4.6
+        "count": 51,
+        "percentage": 10.2
       }
     },
     "7": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 135,
-        "percentage": 27.0
+        "count": 100,
+        "percentage": 20.0
       },
       "1": {
         "label": "Civil Disputes & Property Law",
-        "count": 74,
-        "percentage": 14.8
+        "count": 113,
+        "percentage": 22.6
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 48,
-        "percentage": 9.6
+        "count": 65,
+        "percentage": 13.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 39,
-        "percentage": 7.8
+        "count": 81,
+        "percentage": 16.2
       },
       "4": {
         "label": "Financial & Commercial Disputes",
-        "count": 97,
-        "percentage": 19.4
+        "count": 51,
+        "percentage": 10.2
       },
       "5": {
         "label": "Motor Accident & Compensation Claims",
-        "count": 23,
-        "percentage": 4.6
+        "count": 51,
+        "percentage": 10.2
       },
       "6": {
         "label": "Cluster 6",
-        "count": 84,
-        "percentage": 16.8
+        "count": 39,
+        "percentage": 7.8
       }
     },
     "8": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 74,
-        "percentage": 14.8
+        "count": 113,
+        "percentage": 22.6
       },
       "1": {
         "label": "Civil Disputes & Property Law",
-        "count": 97,
-        "percentage": 19.4
-      },
-      "2": {
-        "label": "Constitutional & Writ Jurisdiction",
         "count": 48,
         "percentage": 9.6
       },
+      "2": {
+        "label": "Constitutional & Writ Jurisdiction",
+        "count": 65,
+        "percentage": 13.0
+      },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 68,
-        "percentage": 13.6
+        "count": 81,
+        "percentage": 16.2
       },
       "4": {
         "label": "Financial & Commercial Disputes",
-        "count": 67,
-        "percentage": 13.4
+        "count": 51,
+        "percentage": 10.2
       },
       "5": {
         "label": "Motor Accident & Compensation Claims",
-        "count": 23,
-        "percentage": 4.6
+        "count": 51,
+        "percentage": 10.2
       },
       "6": {
         "label": "Cluster 6",
-        "count": 84,
-        "percentage": 16.8
+        "count": 39,
+        "percentage": 7.8
       },
       "7": {
         "label": "Cluster 7",
-        "count": 39,
-        "percentage": 7.8
+        "count": 52,
+        "percentage": 10.4
       }
     }
   },
   "similar_precedents": [
     {
-      "id": "SC-2020-1164",
-      "label": 0,
-      "text_preview": "K. M. Nanavati vs. State of Maharashtra was a 1959 Indian court case where Kawas Manekshaw Nanavati, a Naval Commander, was tried for the murder of Prem Ahuja, his wife's lover. Commander Nanavati, accused under section 302, was initially declared not guilty by a jury, but the verdict was dismissed by the Bombay High Court and the case was retried as a bench trial. The case is often erroneously believed to be the last jury trial in India, but there were several trials afterwards that used juries, some well into the 1960s. Nanavati was finally pardoned by Vijaya Lakshmi Pandit, the newly appointed Governor of Maharashtra and sister of Prime Minister Jawaharlal Nehru. The incident received unprecedented media coverage and inspired several books and films such as the 1963 film Yeh Rastey Hain Pyar Ke, the 1973 film Achanak, the 1983 film Asthram, the 2016 film Rustom, and the 2019 web series The Verdict - State vs Nanavati. [Citation Index: 98]",
-      "similarity": 51.57
+      "id": "SC-2018-1000",
+      "label": 1,
+      "text_preview": "The appellant was convicted under Section 302 of the Indian Penal Code for the murder of his wife. The prosecution relied entirely on circumstantial evidence and the 'last seen together' theory. However, the Supreme Court noted that the chain of circumstances was not complete. There was a significant time gap between when they were last seen and the discovery of the body. The conviction was set aside and the appellant was acquitted.",
+      "similarity": 100.0
     },
     {
-      "id": "SC-2020-1098",
-      "label": 0,
-      "text_preview": "K. M. Nanavati vs. State of Maharashtra was a 1959 Indian court case where Kawas Manekshaw Nanavati, a Naval Commander, was tried for the murder of Prem Ahuja, his wife's lover. Commander Nanavati, accused under section 302, was initially declared not guilty by a jury, but the verdict was dismissed by the Bombay High Court and the case was retried as a bench trial. The case is often erroneously believed to be the last jury trial in India, but there were several trials afterwards that used juries, some well into the 1960s. Nanavati was finally pardoned by Vijaya Lakshmi Pandit, the newly appointed Governor of Maharashtra and sister of Prime Minister Jawaharlal Nehru. The incident received unprecedented media coverage and inspired several books and films such as the 1963 film Yeh Rastey Hain Pyar Ke, the 1973 film Achanak, the 1983 film Asthram, the 2016 film Rustom, and the 2019 web series The Verdict - State vs Nanavati. [Citation Index: 32]",
-      "similarity": 51.57
+      "id": "SC-2018-1192",
+      "label": 1,
+      "text_preview": "The petitioner seeks quashing of an FIR registered under Sections 420 and 406 IPC for criminal breach of trust and cheating related to a corporate investment scheme. The Court observed that the dispute is purely civil in nature, arising from a breach of contract regarding corporate funds, and civil remedies were already being pursued. To prevent abuse of process, the FIR is quashed.",
+      "similarity": 15.43
     },
     {
-      "id": "SC-2020-1032",
-      "label": 0,
-      "text_preview": "K. M. Nanavati vs. State of Maharashtra was a 1959 Indian court case where Kawas Manekshaw Nanavati, a Naval Commander, was tried for the murder of Prem Ahuja, his wife's lover. Commander Nanavati, accused under section 302, was initially declared not guilty by a jury, but the verdict was dismissed by the Bombay High Court and the case was retried as a bench trial. The case is often erroneously believed to be the last jury trial in India, but there were several trials afterwards that used juries, some well into the 1960s. Nanavati was finally pardoned by Vijaya Lakshmi Pandit, the newly appointed Governor of Maharashtra and sister of Prime Minister Jawaharlal Nehru. The incident received unprecedented media coverage and inspired several books and films such as the 1963 film Yeh Rastey Hain Pyar Ke, the 1973 film Achanak, the 1983 film Asthram, the 2016 film Rustom, and the 2019 web series The Verdict - State vs Nanavati.",
-      "similarity": 51.57
+      "id": "SC-2022-1022",
+      "label": 1,
+      "text_preview": "The petitioner seeks quashing of an FIR registered under Sections 420 and 406 IPC for criminal breach of trust and cheating related to a corporate investment scheme. The Court observed that the dispute is purely civil in nature, arising from a breach of contract regarding corporate funds, and civil remedies were already being pursued. To prevent abuse of process, the FIR is quashed.",
+      "similarity": 15.41
     }
   ],
   "prediction": {
-    "outcome": 0,
-    "confidence": 0.9172
+    "outcome": 1,
+    "confidence": 98.85
   },
   "feature_importance": [
     [
       "embedding_semantic_core",
-      35.0028
+      6.9491
     ],
     [
       "legal_precedent_weight",
-      24.5937
+      6.7013
     ],
     [
       "statute_relevance_score",
-      15.3964
+      6.6963
     ],
     [
       "factual_similarity_index",
-      13.9205
+      6.4931
     ],
     [
       "jurisdictional_factor",
-      13.4629
+      5.9846
     ],
     [
       "temporal_proximity",
-      11.8077
+      5.6268
     ],
     [
       "case_complexity_metric",
-      11.7809
+      5.4785
     ],
     [
       "appellant_profile_weight",
-      11.3669
+      5.3925
     ],
     [
       "evidence_strength_index",
-      10.7989
+      5.382
     ],
     [
       "procedural_compliance_score",
-      9.6415
+      5.2398
     ]
   ],
   "bias_report": {
@@ -405,31 +405,31 @@
       "Final prediction synthesized from statutory, precedent, and factual signals."
     ],
     "conclusion": {
-      "outcome": "REJECTED",
-      "confidence": "91.72%",
+      "outcome": "ACCEPTED",
+      "confidence": "9885.00%",
       "key_factors": [
         "appellant",
         "section",
         "testimonies",
-        "evidence",
-        "pw"
+        "pw",
+        "defense"
       ],
       "supporting_precedents": 3
     }
   },
-  "explanation": "Upon meticulous examination of the factual matrix presented before this Court, and having regard to the submissions advanced by the learned counsel for both parties, the relevant statutory provisions and judicial precedents have been carefully analyzed. The applicable statutory provisions, namely Governing statutes detected: Section 96 IPC, have been duly considered. The precedent analysis conducted through hierarchical semantic vector clustering reveals a pattern consistent with established judicial reasoning in analogous matters. Having considered the totality of circumstances, the weight of evidence, and the applicable legal principles, this Court is of the considered opinion that the matter warrants a determination of: Rejected/Dismissed. This assessment is corroborated by the convergence of multiple analytical vectors including statutory alignment, precedent similarity, and factual pattern recognition, achieving a high degree of confidence in the predicted judicial outcome.",
+  "explanation": "Upon meticulous examination of the factual matrix presented before this Court, and having regard to the submissions advanced by the learned counsel for both parties, the relevant statutory provisions and judicial precedents have been carefully analyzed. The applicable statutory provisions, namely Governing statutes detected: Section 96 IPC, have been duly considered. The precedent analysis conducted through hierarchical semantic vector clustering reveals a pattern consistent with established judicial reasoning in analogous matters. Having considered the totality of circumstances, the weight of evidence, and the applicable legal principles, this Court is of the considered opinion that the matter warrants a determination of: Accepted/Allowed. This assessment is corroborated by the convergence of multiple analytical vectors including statutory alignment, precedent similarity, and factual pattern recognition, achieving a high degree of confidence in the predicted judicial outcome.",
   "system_status": {
     "hdfs": {
       "hdfs_available": false,
-      "base_uri": "local://C:\\Users\\ngoya\\big data project\\Judicial-AI-System\\data\\hdfs",
+      "base_uri": "local://c:\\Users\\NETAL AGARWAL\\OneDrive\\Big data\\Judicial-Bigdata-Project\\data\\hdfs",
       "storage_mode": "Local Filesystem Fallback"
     },
     "graph": {
-      "connected": false,
-      "statutes": 1,
-      "cases": 0,
-      "edges": 0,
-      "backend": "In-Memory Graph"
+      "connected": true,
+      "statutes": 4,
+      "cases": 8,
+      "edges": 9,
+      "backend": "Neo4j"
     },
     "faiss": {
       "faiss_available": true,
@@ -438,7 +438,7 @@
     },
     "embedder": {
       "model_name": "sentence-transformers/all-MiniLM-L6-v2",
-      "model_loaded": true,
+      "model_loaded": false,
       "embedding_dim": 384
     },
     "nlp": {
@@ -452,6 +452,6 @@
       "processing_mode": "Spark + spaCy",
       "spark_available": true
     },
-    "pipeline_build_time": 143.49
+    "pipeline_build_time": 64.73
   }
 }
