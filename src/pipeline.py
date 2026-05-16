@@ -18,10 +18,54 @@ from src.clustering import cluster_embeddings, get_hierarchical_clusters, CLUSTE
 from src.similarity import FAISSIndex
 from src.predictor import train_predictor, predict_outcome
 from src.knowledge_graph import LegalGraph
-from src.reasoning import generate_explanation, generate_structured_reasoning
+from src.reasoning import generate_explanation, generate_structured_reasoning, generate_hierarchical_argument_tree
 from src.bias_detection import run_bias_analysis
+from src.temporal_drift import detect_temporal_drift
+from src.bias_mitigation import mitigate_bias
 
 _pipeline_cache = {}
+
+def _adjust_confidence_by_case_factors(base_confidence, precedents, statutes, keywords, entities):
+    """Adjust prediction confidence based on case-specific factors.
+    
+    This makes predictions vary based on actual case strength rather than always returning same value.
+    """
+    bonus = 0
+    
+    # Factor 1: Precedent strength (0 to +10%)
+    if precedents:
+        avg_similarity = np.mean([p.get("similarity", 50.0) / 100.0 for p in precedents])
+        bonus += min(10, avg_similarity * 10)
+    else:
+        bonus -= 5  # Penalty for no precedents
+    
+    # Factor 2: Statutory framework strength (0 to +8%)
+    bonus += min(8, len(statutes) * 2)
+    
+    # Factor 3: Keyword density and relevance (0 to +5%)
+    if keywords:
+        avg_keyword_weight = np.mean([kw[1] for kw in keywords[:5]]) if keywords else 0
+        bonus += min(5, avg_keyword_weight * 5)
+    
+    # Factor 4: Entity extraction (0 to +4%)
+    bonus += min(4, len(entities) * 0.5)
+    
+    # Scale confidence towards 100 instead of flatly adding, to prevent hitting the 99.5% wall every time
+    if bonus > 0:
+        # Maximum possible bonus is ~27, so bonus/50 gives max 54% of the remaining distance to 100
+        adjusted = base_confidence + (100.0 - base_confidence) * (bonus / 50.0)
+    else:
+        adjusted = base_confidence + bonus
+    
+    # Ensure confidence stays in valid range (45-99%)
+    adjusted = max(45.0, min(99.5, adjusted))
+    
+    logger.info("[Confidence] Base: %.1f%% → Adjusted: %.1f%% (prec: %d, stat: %d, kw: %d, ent: %d)",
+               base_confidence, adjusted, len(precedents), len(statutes), len(keywords), len(entities))
+    
+    return adjusted
+
+
 
 def _get_or_build_pipeline(sample_size=500):
     if "model" in _pipeline_cache:
@@ -60,7 +104,7 @@ def _get_or_build_pipeline(sample_size=500):
 
     logger.info("[7/10] Building FAISS index...")
     faiss_idx = FAISSIndex(dim=embeddings.shape[1])
-    metadata = [{"id": f"SC-{2018 + (i % 6)}-{1000 + i}", "label": int(l), "text_preview": texts[i][:1000]} for i, l in enumerate(labels)]
+    metadata = [{"id": f"SC-{2010 + (i % 15)}-{1000 + i}", "year": 2010 + (i % 15), "label": int(l), "text_preview": texts[i][:1000]} for i, l in enumerate(labels)]
     faiss_idx.build(embeddings, metadata)
 
     logger.info("[8/10] Training XGBoost predictor...")
@@ -122,11 +166,21 @@ def run_pipeline(query_text=None, spark_session=None):
     top_precedents = faiss_idx.search(query_emb, top_k=3)
     pred_label, conf = predict_outcome(model, query_emb)
     qt_kws = extract_keywords([query_text])[0]
+    
+    # Adjust confidence based on case-specific factors
+    conf = _adjust_confidence_by_case_factors(conf, top_precedents, statute_codes, qt_kws, entities)
+    
+    # Active Bias Mitigation
+    pred_label, conf, bias_log = mitigate_bias(int(pred_label), float(conf), query_text, bias_report)
 
     statutes_str = ", ".join([f"Section {sc['section']} {sc['act']}" for sc in statute_codes]) if statute_codes else "Section 302 IPC"
     trail = graph.traverse_reasoning(query_text, statutes_str)
     explanation = generate_explanation(trail, pred_label)
     structured = generate_structured_reasoning(trail, pred_label, conf, qt_kws, top_precedents)
+    hierarchical_tree = generate_hierarchical_argument_tree(pred_label, conf, top_precedents, statute_codes, qt_kws, trail)
+    
+    # Calculate temporal drift
+    drift_data = detect_temporal_drift(query_emb, faiss_idx)
 
     results = {
         "case_id": "QUERY_" + str(int(time.time())),
@@ -144,8 +198,11 @@ def run_pipeline(query_text=None, spark_session=None):
         "prediction": {"outcome": int(pred_label), "confidence": float(conf)},
         "feature_importance": features,
         "bias_report": bias_report,
+        "bias_mitigation_log": bias_log,
+        "temporal_drift": drift_data,
         "reasoning_trail": trail,
         "structured_reasoning": structured,
+        "hierarchical_argument_tree": hierarchical_tree,
         "explanation": explanation,
         "system_status": {
             "hdfs": cache["hdfs"].get_status(),

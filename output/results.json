@@ -1,126 +1,76 @@
 {
-  "case_id": "QUERY_1776312003",
+  "case_id": "QUERY_1778928161",
   "title": "State vs. Appellant (Criminal Appeal)",
-  "query_text": "The present appeal challenges the judgment of the High Court confirming the conviction of the appellant under Section 302 of the Indian Penal Code (IPC). The brief facts of the case are that on the evening of 15th October 2021, the appellant was seen engaging in a heated argument with the deceased, Ramesh Kumar, over a property dispute. According to the prosecution case, the appellant proceeded to strike the deceased repeatedly with a sharp weapon, resulting in his immediate death. Two eyewitnes",
+  "query_text": "she petitions the court to overturn the lower court's decision regarding her employment termination. She argues that her dismissal was unlawful and violated the terms of her contract. The respondent corporation claims she was terminated for continuous breaches of protocol, but she has provided extensive documentation proving that male colleagues committing identical breaches faced no such penalties. The trial court dismissed her case, stating the corporation acted within its rights, but she has ",
   "sections": {
-    "Facts": "of the case are that on the evening of 15th October 2021, the appellant was seen engaging in a heated",
+    "Facts": "The respondent corporation claims she was terminated for continuous breaches of protocol, but she has provided extensive documentation proving that male colleagues committing identical breaches faced no such penalties. The trial court dismissed her case, stating the corporation acted within its rights, but she has brought the appeal to this bench citing discriminatory practices",
     "Issues": "",
-    "Statutes": [
-      "Section 302 of the Indian Penal Code",
-      "Section 27 of the Evidence Act",
-      "Section 96 IPC"
-    ],
+    "Statutes": [],
     "Arguments": "",
     "Decision": ""
   },
-  "statute_codes": [
-    {
-      "section": "96",
-      "act": "IPC"
-    }
-  ],
+  "statute_codes": [],
   "nlp_tokens": [
-    "present",
-    "appeal",
-    "challenge",
-    "judgment",
-    "high",
+    "petition",
     "court",
-    "confirm",
-    "conviction",
-    "appellant",
-    "section",
-    "indian",
-    "penal",
-    "code",
-    "ipc",
-    "brief",
-    "fact",
-    "case",
-    "evening",
-    "october",
-    "appellant",
-    "see",
-    "engage",
-    "heated",
-    "argument",
-    "deceased",
-    "ramesh",
-    "kumar",
-    "property",
-    "dispute",
-    "accord"
+    "overturn",
+    "low",
+    "court",
+    "decision",
+    "employment",
+    "termination",
+    "argue",
+    "dismissal",
+    "unlawful",
+    "violate",
+    "term",
+    "contract",
+    "respondent",
+    "corporation",
+    "claim",
+    "terminate",
+    "continuous",
+    "breach",
+    "protocol",
+    "provide",
+    "extensive",
+    "documentation",
+    "prove",
+    "male",
+    "colleague",
+    "commit",
+    "identical",
+    "breach"
   ],
-  "entities": [
-    {
-      "text": "the High Court",
-      "label": "ORG"
-    },
-    {
-      "text": "Section 302",
-      "label": "LAW"
-    },
-    {
-      "text": "the Indian Penal Code",
-      "label": "ORG"
-    },
-    {
-      "text": "IPC",
-      "label": "ORG"
-    },
-    {
-      "text": "Kumar",
-      "label": "GPE"
-    },
-    {
-      "text": "Two",
-      "label": "CARDINAL"
-    },
-    {
-      "text": "Section 96",
-      "label": "LAW"
-    },
-    {
-      "text": "IPC",
-      "label": "ORG"
-    },
-    {
-      "text": "Section 27",
-      "label": "LAW"
-    },
-    {
-      "text": "Evidence Act",
-      "label": "LAW"
-    }
-  ],
+  "entities": [],
   "top_keywords": [
     [
-      "appellant",
-      0.1924
+      "court",
+      0.214
     ],
     [
-      "section",
-      0.1547
+      "corporation",
+      0.1727
     ],
     [
-      "testimonies",
-      0.1248
+      "breaches",
+      0.1727
     ],
     [
-      "pw",
-      0.1248
+      "violated terms",
+      0.102
     ],
     [
-      "defense",
-      0.1248
+      "court dismissed",
+      0.102
     ]
   ],
-  "cluster_assignment": 90,
+  "cluster_assignment": 100,
   "cluster_info": {
     "0": {
       "label": "Criminal Offenses & Penal Law",
-      "count": 90,
-      "percentage": 18.0
+      "count": 100,
+      "percentage": 20.0
     },
     "1": {
       "label": "Civil Disputes & Property Law",
@@ -129,53 +79,53 @@
     },
     "2": {
       "label": "Constitutional & Writ Jurisdiction",
-      "count": 65,
-      "percentage": 13.0
+      "count": 150,
+      "percentage": 30.0
     },
     "3": {
       "label": "Family & Matrimonial Law",
-      "count": 81,
-      "percentage": 16.2
+      "count": 50,
+      "percentage": 10.0
     },
     "4": {
       "label": "Financial & Commercial Disputes",
-      "count": 113,
-      "percentage": 22.6
+      "count": 50,
+      "percentage": 10.0
     },
     "5": {
       "label": "Motor Accident & Compensation Claims",
-      "count": 51,
-      "percentage": 10.2
+      "count": 50,
+      "percentage": 10.0
     }
   },
   "hierarchical_clustering": {
     "4": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 216,
-        "percentage": 43.2
+        "count": 150,
+        "percentage": 30.0
       },
       "1": {
         "label": "Civil Disputes & Property Law",
-        "count": 113,
-        "percentage": 22.6
+        "count": 100,
+        "percentage": 20.0
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 90,
-        "percentage": 18.0
+        "count": 150,
+        "percentage": 30.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 81,
-        "percentage": 16.2
+        "count": 100,
+        "percentage": 20.0
       }
     },
     "5": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 116,
-        "percentage": 23.2
+        "count": 100,
+        "percentage": 20.0
       },
       "1": {
         "label": "Civil Disputes & Property Law",
@@ -184,25 +134,25 @@
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 90,
-        "percentage": 18.0
+        "count": 150,
+        "percentage": 30.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 81,
-        "percentage": 16.2
+        "count": 100,
+        "percentage": 20.0
       },
       "4": {
         "label": "Financial & Commercial Disputes",
-        "count": 113,
-        "percentage": 22.6
+        "count": 50,
+        "percentage": 10.0
       }
     },
     "6": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 90,
-        "percentage": 18.0
+        "count": 100,
+        "percentage": 20.0
       },
       "1": {
         "label": "Civil Disputes & Property Law",
@@ -211,169 +161,160 @@
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 65,
-        "percentage": 13.0
+        "count": 150,
+        "percentage": 30.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 81,
-        "percentage": 16.2
+        "count": 50,
+        "percentage": 10.0
       },
       "4": {
         "label": "Financial & Commercial Disputes",
-        "count": 113,
-        "percentage": 22.6
+        "count": 50,
+        "percentage": 10.0
       },
       "5": {
         "label": "Motor Accident & Compensation Claims",
-        "count": 51,
-        "percentage": 10.2
+        "count": 50,
+        "percentage": 10.0
       }
     },
     "7": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 100,
-        "percentage": 20.0
+        "count": 150,
+        "percentage": 30.0
       },
       "1": {
         "label": "Civil Disputes & Property Law",
-        "count": 113,
-        "percentage": 22.6
+        "count": 100,
+        "percentage": 20.0
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 65,
-        "percentage": 13.0
+        "count": 50,
+        "percentage": 10.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 81,
-        "percentage": 16.2
+        "count": 50,
+        "percentage": 10.0
       },
       "4": {
         "label": "Financial & Commercial Disputes",
-        "count": 51,
-        "percentage": 10.2
+        "count": 50,
+        "percentage": 10.0
       },
       "5": {
         "label": "Motor Accident & Compensation Claims",
-        "count": 51,
-        "percentage": 10.2
+        "count": 50,
+        "percentage": 10.0
       },
       "6": {
         "label": "Cluster 6",
-        "count": 39,
-        "percentage": 7.8
+        "count": 50,
+        "percentage": 10.0
       }
     },
     "8": {
       "0": {
         "label": "Criminal Offenses & Penal Law",
-        "count": 113,
-        "percentage": 22.6
+        "count": 100,
+        "percentage": 20.0
       },
       "1": {
         "label": "Civil Disputes & Property Law",
-        "count": 48,
-        "percentage": 9.6
+        "count": 100,
+        "percentage": 20.0
       },
       "2": {
         "label": "Constitutional & Writ Jurisdiction",
-        "count": 65,
-        "percentage": 13.0
+        "count": 50,
+        "percentage": 10.0
       },
       "3": {
         "label": "Family & Matrimonial Law",
-        "count": 81,
-        "percentage": 16.2
+        "count": 50,
+        "percentage": 10.0
       },
       "4": {
         "label": "Financial & Commercial Disputes",
-        "count": 51,
-        "percentage": 10.2
+        "count": 50,
+        "percentage": 10.0
       },
       "5": {
         "label": "Motor Accident & Compensation Claims",
-        "count": 51,
-        "percentage": 10.2
+        "count": 50,
+        "percentage": 10.0
       },
       "6": {
         "label": "Cluster 6",
-        "count": 39,
-        "percentage": 7.8
+        "count": 50,
+        "percentage": 10.0
       },
       "7": {
         "label": "Cluster 7",
-        "count": 52,
-        "percentage": 10.4
+        "count": 50,
+        "percentage": 10.0
       }
     }
   },
   "similar_precedents": [
     {
-      "id": "SC-2018-1000",
-      "label": 1,
-      "text_preview": "The appellant was convicted under Section 302 of the Indian Penal Code for the murder of his wife. The prosecution relied entirely on circumstantial evidence and the 'last seen together' theory. However, the Supreme Court noted that the chain of circumstances was not complete. There was a significant time gap between when they were last seen and the discovery of the body. The conviction was set aside and the appellant was acquitted.",
-      "similarity": 100.0
+      "id": "SC-2016-1021",
+      "year": 2016,
+      "label": 0,
+      "text_preview": "This appeal challenges the conviction under Section 302 IPC. The eyewitness testimony of PW-1 and PW-3 was found to be highly consistent and natural. Furthermore, the recovery of the blood-stained weapon under Section 27 of the Evidence Act matched the forensic report. The High Court's decision to dismiss the appeal and uphold the life sentence is affirmed.",
+      "similarity": 5.78
     },
     {
-      "id": "SC-2018-1192",
-      "label": 1,
-      "text_preview": "The petitioner seeks quashing of an FIR registered under Sections 420 and 406 IPC for criminal breach of trust and cheating related to a corporate investment scheme. The Court observed that the dispute is purely civil in nature, arising from a breach of contract regarding corporate funds, and civil remedies were already being pursued. To prevent abuse of process, the FIR is quashed.",
-      "similarity": 15.43
+      "id": "SC-2021-1011",
+      "year": 2021,
+      "label": 0,
+      "text_preview": "This appeal challenges the conviction under Section 302 IPC. The eyewitness testimony of PW-1 and PW-3 was found to be highly consistent and natural. Furthermore, the recovery of the blood-stained weapon under Section 27 of the Evidence Act matched the forensic report. The High Court's decision to dismiss the appeal and uphold the life sentence is affirmed.",
+      "similarity": 5.78
     },
     {
-      "id": "SC-2022-1022",
-      "label": 1,
-      "text_preview": "The petitioner seeks quashing of an FIR registered under Sections 420 and 406 IPC for criminal breach of trust and cheating related to a corporate investment scheme. The Court observed that the dispute is purely civil in nature, arising from a breach of contract regarding corporate funds, and civil remedies were already being pursued. To prevent abuse of process, the FIR is quashed.",
-      "similarity": 15.41
+      "id": "SC-2011-1001",
+      "year": 2011,
+      "label": 0,
+      "text_preview": "This appeal challenges the conviction under Section 302 IPC. The eyewitness testimony of PW-1 and PW-3 was found to be highly consistent and natural. Furthermore, the recovery of the blood-stained weapon under Section 27 of the Evidence Act matched the forensic report. The High Court's decision to dismiss the appeal and uphold the life sentence is affirmed.",
+      "similarity": 5.78
     }
   ],
   "prediction": {
     "outcome": 1,
-    "confidence": 98.85
+    "confidence": 99.0
   },
   "feature_importance": [
     [
       "embedding_semantic_core",
-      6.9491
+      55.8086
     ],
     [
       "legal_precedent_weight",
-      6.7013
+      39.8091
     ],
     [
       "statute_relevance_score",
-      6.6963
+      13.051
     ],
     [
       "factual_similarity_index",
-      6.4931
+      5.2097
     ],
     [
       "jurisdictional_factor",
-      5.9846
+      1.8965
     ],
     [
       "temporal_proximity",
-      5.6268
+      0.3657
     ],
     [
       "case_complexity_metric",
-      5.4785
-    ],
-    [
-      "appellant_profile_weight",
-      5.3925
-    ],
-    [
-      "evidence_strength_index",
-      5.382
-    ],
-    [
-      "procedural_compliance_score",
-      5.2398
+      0.3228
     ]
   ],
   "bias_report": {
@@ -384,17 +325,39 @@
       "3": 1.0
     }
   },
+  "bias_mitigation_log": {
+    "applied": true,
+    "demographics_detected": {
+      "gender": "Female",
+      "region": "Unknown"
+    },
+    "original_outcome": 1,
+    "original_confidence": 95.72,
+    "adjustment": 8.0,
+    "reason": "Boosted acceptance confidence by 8.0% to offset systemic historical disadvantage (DI=0.6)."
+  },
+  "temporal_drift": {
+    "has_drift": true,
+    "shift_direction": "rejection",
+    "shift_percentage": 2,
+    "threshold_year": 2020,
+    "old_acceptance_rate": 17.5,
+    "new_acceptance_rate": 15.0,
+    "alert_message": "Note: Legal interpretation in this area has shifted 2% toward rejection since 2020."
+  },
   "reasoning_trail": [
-    "Case analysis initiated. Key factual matrix: \"The present appeal challenges the judgment of the High Court confirming the conviction of the appell...\"",
-    "Governing statutes detected: Section 96 IPC",
+    "Case analysis initiated. Key factual matrix: \"she petitions the court to overturn the lower court's decision regarding her employment termination....\"",
+    "Governing statutes detected: Section 302 IPC",
+    "Statute provision: Section 302 IPC - Punishment for murder: Death or imprisonment for life",
     "Historical precedent vectors retrieved from FAISS index (top-3 cosine similarity).",
     "Factual pattern alignment with precedent outcomes via XGBoost feature weighting.",
     "Final prediction synthesized from statutory, precedent, and factual signals."
   ],
   "structured_reasoning": {
-    "factual_analysis": "Case analysis initiated. Key factual matrix: \"The present appeal challenges the judgment of the High Court confirming the conviction of the appell...\"",
+    "factual_analysis": "Case analysis initiated. Key factual matrix: \"she petitions the court to overturn the lower court's decision regarding her employment termination....\"",
     "statutory_framework": [
-      "Governing statutes detected: Section 96 IPC"
+      "Governing statutes detected: Section 302 IPC",
+      "Statute provision: Section 302 IPC - Punishment for murder: Death or imprisonment for life"
     ],
     "precedent_analysis": [
       "Historical precedent vectors retrieved from FAISS index (top-3 cosine similarity).",
@@ -406,30 +369,123 @@
     ],
     "conclusion": {
       "outcome": "ACCEPTED",
-      "confidence": "9885.00%",
+      "confidence": "99.00%",
       "key_factors": [
-        "appellant",
-        "section",
-        "testimonies",
-        "pw",
-        "defense"
+        "court",
+        "corporation",
+        "breaches",
+        "violated terms",
+        "court dismissed"
       ],
       "supporting_precedents": 3
     }
   },
-  "explanation": "Upon meticulous examination of the factual matrix presented before this Court, and having regard to the submissions advanced by the learned counsel for both parties, the relevant statutory provisions and judicial precedents have been carefully analyzed. The applicable statutory provisions, namely Governing statutes detected: Section 96 IPC, have been duly considered. The precedent analysis conducted through hierarchical semantic vector clustering reveals a pattern consistent with established judicial reasoning in analogous matters. Having considered the totality of circumstances, the weight of evidence, and the applicable legal principles, this Court is of the considered opinion that the matter warrants a determination of: Accepted/Allowed. This assessment is corroborated by the convergence of multiple analytical vectors including statutory alignment, precedent similarity, and factual pattern recognition, achieving a high degree of confidence in the predicted judicial outcome.",
+  "hierarchical_argument_tree": {
+    "tree_structure": {
+      "name": "Prediction: ACCEPTED",
+      "confidence": 0.99,
+      "description": "Overall case outcome with 99.0% confidence",
+      "evidence": [],
+      "children": [
+        {
+          "name": "Strong Precedent Alignment",
+          "confidence": 0.4,
+          "description": "Relevant case precedents supporting the prediction",
+          "evidence": [
+            "Key matching terms: court, corporation, breaches",
+            "Precedent base count: 3"
+          ],
+          "children": [
+            {
+              "name": "SC-2016-1021 (Similar: 0.06)",
+              "confidence": 0.0578,
+              "description": "Reference case with similar facts and law",
+              "evidence": [
+                "Historical outcome: REJECTED",
+                "Semantic similarity: 5.78%",
+                "Counter-precedent analysis required"
+              ],
+              "children": []
+            },
+            {
+              "name": "SC-2021-1011 (Similar: 0.06)",
+              "confidence": 0.0578,
+              "description": "Reference case with similar facts and law",
+              "evidence": [
+                "Historical outcome: REJECTED",
+                "Semantic similarity: 5.78%",
+                "Counter-precedent analysis required"
+              ],
+              "children": []
+            },
+            {
+              "name": "SC-2011-1001 (Similar: 0.06)",
+              "confidence": 0.0578,
+              "description": "Reference case with similar facts and law",
+              "evidence": [
+                "Historical outcome: REJECTED",
+                "Semantic similarity: 5.78%",
+                "Counter-precedent analysis required"
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Weakness Identified",
+          "confidence": 0.01,
+          "description": "Areas where argument is less robust",
+          "evidence": [
+            "Confidence level: 99.00%",
+            "Identified gaps: 1"
+          ],
+          "children": [
+            {
+              "name": "Gap 1: Weak semantic indicators for: court, corporation",
+              "confidence": 0.45,
+              "description": "Weak semantic indicators for: court, corporation",
+              "evidence": [
+                "Requires further substantiation",
+                "Alternative interpretations possible"
+              ],
+              "children": []
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "outcome": "ACCEPTED",
+        "overall_confidence": 99.0,
+        "main_arguments": 2,
+        "total_evidence_points": 15,
+        "tree_depth": 2
+      }
+    },
+    "tree_ascii": "\u2514\u2500\u2500 Prediction: ACCEPTED (0.99)\n    \u251c\u2500\u2500 Strong Precedent Alignment (0.40)\n        \u251c\u2500\u2500 Key matching terms: court, corporation, breaches\n        \u251c\u2500\u2500 Precedent base count: 3\n    \u2502   \u251c\u2500\u2500 SC-2016-1021 (Similar: 0.06) (0.06)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 5.78%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u2502   \u251c\u2500\u2500 SC-2021-1011 (Similar: 0.06) (0.06)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 5.78%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u2502   \u2514\u2500\u2500 SC-2011-1001 (Similar: 0.06) (0.06)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 5.78%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u2514\u2500\u2500 Weakness Identified (0.01)\n        \u251c\u2500\u2500 Confidence level: 99.00%\n        \u251c\u2500\u2500 Identified gaps: 1\n        \u2514\u2500\u2500 Gap 1: Weak semantic indicators for: court, corporation (0.45)\n            \u251c\u2500\u2500 Requires further substantiation\n            \u2514\u2500\u2500 Alternative interpretations possible\n",
+    "summary": {
+      "outcome": "ACCEPTED",
+      "overall_confidence": 99.0,
+      "main_argument_branches": 2,
+      "precedent_strength": "Weak precedent foundation",
+      "statutory_strength": "No applicable statutes identified",
+      "identified_weaknesses": [
+        "Weak indicators: court, corporation"
+      ]
+    }
+  },
+  "explanation": "Upon meticulous examination of the factual matrix presented before this Court, and having regard to the submissions advanced by the learned counsel for both parties, the relevant statutory provisions and judicial precedents have been carefully analyzed. The applicable statutory provisions, namely Governing statutes detected: Section 302 IPC; Statute provision: Section 302 IPC - Punishment for murder: Death or imprisonment for life, have been duly considered. The precedent analysis conducted through hierarchical semantic vector clustering reveals a pattern consistent with established judicial reasoning in analogous matters. Having considered the totality of circumstances, the weight of evidence, and the applicable legal principles, this Court is of the considered opinion that the matter warrants a determination of: Accepted/Allowed. This assessment is corroborated by the convergence of multiple analytical vectors including statutory alignment, precedent similarity, and factual pattern recognition, achieving a high degree of confidence in the predicted judicial outcome.",
   "system_status": {
     "hdfs": {
-      "hdfs_available": false,
-      "base_uri": "local://c:\\Users\\NETAL AGARWAL\\OneDrive\\Big data\\Judicial-Bigdata-Project\\data\\hdfs",
-      "storage_mode": "Local Filesystem Fallback"
+      "hdfs_available": true,
+      "base_uri": "hdfs:///judicial",
+      "storage_mode": "HDFS Distributed"
     },
     "graph": {
-      "connected": true,
-      "statutes": 4,
-      "cases": 8,
-      "edges": 9,
-      "backend": "Neo4j"
+      "connected": false,
+      "statutes": 1,
+      "cases": 9,
+      "edges": 0,
+      "backend": "In-Memory Graph"
     },
     "faiss": {
       "faiss_available": true,
@@ -452,6 +508,6 @@
       "processing_mode": "Spark + spaCy",
       "spark_available": true
     },
-    "pipeline_build_time": 64.73
+    "pipeline_build_time": 69.15
   }
 }

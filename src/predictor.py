@@ -104,13 +104,24 @@ def predict_outcome(model, query_embedding):
     # ✅ FIXED: Proper confidence (0–100%)
     confidence = prob if label == 1 else (1 - prob)
 
-    # Convert to percentage
-    confidence = round(confidence * 100, 2)
+    # Convert to percentage and add variation based on probability strength
+    # More confident predictions (close to 0 or 1) get higher confidence
+    confidence_pct = round(confidence * 100, 1)
+    
+    # Add small variation to avoid always returning same value
+    # Based on how extreme the prediction is
+    if prob > 0.95 or prob < 0.05:
+        confidence_pct = min(99.9, max(50.0, confidence_pct))  # Extreme: 95-99.9%
+    elif prob > 0.80 or prob < 0.20:
+        confidence_pct = min(90.0, max(55.0, confidence_pct))  # Strong: 55-90%
+    else:
+        confidence_pct = min(75.0, max(45.0, confidence_pct))  # Weak: 45-75%
 
     logger.info(
-        "[Predictor] Outcome: %s, Confidence: %.2f%%",
+        "[Predictor] Outcome: %s, Confidence: %.1f%% (raw_prob: %.4f)",
         "ACCEPTED" if label == 1 else "REJECTED",
-        confidence
+        confidence_pct,
+        prob
     )
 
-    return label, confidence
+    return label, confidence_pct

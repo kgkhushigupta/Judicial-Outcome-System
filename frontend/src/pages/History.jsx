@@ -106,7 +106,7 @@ export default function History() {
                       }}
                     >{item.prediction.outcome === 1 ? 'Accepted' : 'Rejected'}
                       {' · '}
-                      {(item.prediction.confidence * 100).toFixed(0)}%
+                      {(item.prediction.confidence).toFixed(1)}%
                     </span>
                   )}
                 </div>

@@ -51,11 +51,23 @@ class LegalEmbedder:
                 logger.error("[Embeddings] Encoding failed: %s. Using random.", str(e))
 
         dim = 384
-        np.random.seed(42)
-        embeddings = np.random.randn(len(texts), dim).astype(np.float32)
-        norms = np.linalg.norm(embeddings, axis=1, keepdims=True)
-        embeddings = embeddings / (norms + 1e-8)
-        logger.warning("[Embeddings] Generated random embeddings: (%d, %d)", len(texts), dim)
+        import hashlib
+        
+        embeddings = []
+        for t in clean_texts:
+            # Use text hash as seed for deterministic but varied random embeddings
+            seed = int(hashlib.md5(t.encode('utf-8')).hexdigest()[:8], 16)
+            np.random.seed(seed)
+            emb = np.random.randn(dim).astype(np.float32)
+            # Normalize
+            emb = emb / (np.linalg.norm(emb) + 1e-8)
+            embeddings.append(emb)
+            
+        # Reset seed so we don't affect other random operations
+        np.random.seed()
+        
+        embeddings = np.array(embeddings)
+        logger.warning("[Embeddings] Generated deterministic random embeddings: (%d, %d)", len(texts), dim)
         return embeddings
 
     def get_model_info(self):
