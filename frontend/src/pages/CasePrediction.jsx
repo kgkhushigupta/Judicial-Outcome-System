@@ -32,7 +32,21 @@ export default function CasePrediction() {
       if (!resp.ok) throw new Error('Backend not reachable. Make sure Flask server is running.');
 
       const data = await resp.json();
+
+      // Save prediction to local history
+      const history = JSON.parse(localStorage.getItem('jai_history') || '[]');
+      history.unshift({
+        id: data.case_id || Date.now().toString(),
+        type: 'prediction',
+        caseType: caseType,
+        query: facts.slice(0, 120),
+        prediction: data.prediction,
+        date: new Date().toISOString(),
+      });
+      localStorage.setItem('jai_history', JSON.stringify(history.slice(0, 50)));
+
       setResults(data);
+
 
     } catch (err) {
       setError(err.message);

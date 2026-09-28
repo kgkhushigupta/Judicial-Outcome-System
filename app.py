@@ -24,6 +24,23 @@ app = Flask(__name__)
 CORS(app)
 
 
+@app.route('/')
+def index():
+    return jsonify({
+        "system": "Judicial AI System Backend API",
+        "status": "online",
+        "frontend_dashboard": "http://localhost:5173",
+        "available_endpoints": [
+            "/api/status",
+            "/api/analyze",
+            "/api/datasets",
+            "/api/bias",
+            "/api/graph"
+        ]
+    })
+
+
+
 @app.route('/api/analyze', methods=['POST'])
 def analyze_case():
     data = request.json

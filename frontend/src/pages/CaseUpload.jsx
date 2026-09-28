@@ -77,9 +77,11 @@ export default function CaseUpload() {
         type: 'upload',
         fileName: file?.name || 'Pasted text',
         query: textToAnalyze.slice(0, 120),
+        prediction: data.prediction,
         date: new Date().toISOString(),
       });
       localStorage.setItem('jai_history', JSON.stringify(history.slice(0, 50)));
+
 
       setResults(data);
       setActiveTab('Summary');

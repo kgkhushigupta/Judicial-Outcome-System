@@ -1,68 +1,96 @@
 {
-  "case_id": "QUERY_1778928161",
+  "case_id": "QUERY_1790600117",
   "title": "State vs. Appellant (Criminal Appeal)",
-  "query_text": "she petitions the court to overturn the lower court's decision regarding her employment termination. She argues that her dismissal was unlawful and violated the terms of her contract. The respondent corporation claims she was terminated for continuous breaches of protocol, but she has provided extensive documentation proving that male colleagues committing identical breaches faced no such penalties. The trial court dismissed her case, stating the corporation acted within its rights, but she has ",
+  "query_text": "Writ petition filed by a female software engineer against non-compliance with the POSH Act, 2013. The petitioner alleges continuous hostile work environment and improper handling of her complaint by the Internal Complaints Committee (ICC). The employer failed to form an unbiased ICC committee as mandated under Section 4 of the POSH Act. The petitioner seeks quashing of retaliatory termination and compensation for mental agony.\n",
   "sections": {
-    "Facts": "The respondent corporation claims she was terminated for continuous breaches of protocol, but she has provided extensive documentation proving that male colleagues committing identical breaches faced no such penalties. The trial court dismissed her case, stating the corporation acted within its rights, but she has brought the appeal to this bench citing discriminatory practices",
+    "Facts": "The petitioner alleges continuous hostile work environment and improper handling of her complaint by the Internal Complaints Committee (ICC). The petitioner seeks quashing of retaliatory termination and compensation for mental agony",
     "Issues": "",
-    "Statutes": [],
+    "Statutes": [
+      "Section 4 of"
+    ],
     "Arguments": "",
     "Decision": ""
   },
-  "statute_codes": [],
-  "nlp_tokens": [
-    "petition",
-    "court",
-    "overturn",
-    "low",
-    "court",
-    "decision",
-    "employment",
-    "termination",
-    "argue",
-    "dismissal",
-    "unlawful",
-    "violate",
-    "term",
-    "contract",
-    "respondent",
-    "corporation",
-    "claim",
-    "terminate",
-    "continuous",
-    "breach",
-    "protocol",
-    "provide",
-    "extensive",
-    "documentation",
-    "prove",
-    "male",
-    "colleague",
-    "commit",
-    "identical",
-    "breach"
+  "statute_codes": [
+    {
+      "section": "4",
+      "act": "POSH Act"
+    }
   ],
-  "entities": [],
+  "nlp_tokens": [
+    "writ",
+    "petition",
+    "file",
+    "female",
+    "software",
+    "engineer",
+    "non",
+    "compliance",
+    "posh",
+    "act",
+    "petitioner",
+    "allege",
+    "continuous",
+    "hostile",
+    "work",
+    "environment",
+    "improper",
+    "handling",
+    "complaint",
+    "internal",
+    "complaints",
+    "committee",
+    "icc",
+    "employer",
+    "fail",
+    "form",
+    "unbiased",
+    "icc",
+    "committee",
+    "mandate"
+  ],
+  "entities": [
+    {
+      "text": "the POSH Act",
+      "label": "LAW"
+    },
+    {
+      "text": "2013",
+      "label": "DATE"
+    },
+    {
+      "text": "the Internal Complaints Committee (ICC",
+      "label": "ORG"
+    },
+    {
+      "text": "Section 4",
+      "label": "LAW"
+    },
+    {
+      "text": "the POSH Act",
+      "label": "LAW"
+    }
+  ],
   "top_keywords": [
     [
-      "court",
-      0.214
+      "act",
+      0.1803
     ],
     [
-      "corporation",
-      0.1727
+      "icc",
+      0.1803
     ],
     [
-      "breaches",
-      0.1727
+      "posh",
+      0.1803
     ],
     [
-      "violated terms",
-      0.102
+      "posh act",
+      0.1803
     ],
     [
-      "court dismissed",
-      0.102
+      "committee",
+      0.1803
     ]
   ],
   "cluster_assignment": 100,
@@ -266,21 +294,21 @@
       "year": 2016,
       "label": 0,
       "text_preview": "This appeal challenges the conviction under Section 302 IPC. The eyewitness testimony of PW-1 and PW-3 was found to be highly consistent and natural. Furthermore, the recovery of the blood-stained weapon under Section 27 of the Evidence Act matched the forensic report. The High Court's decision to dismiss the appeal and uphold the life sentence is affirmed.",
-      "similarity": 5.78
+      "similarity": 7.94
     },
     {
       "id": "SC-2021-1011",
       "year": 2021,
       "label": 0,
       "text_preview": "This appeal challenges the conviction under Section 302 IPC. The eyewitness testimony of PW-1 and PW-3 was found to be highly consistent and natural. Furthermore, the recovery of the blood-stained weapon under Section 27 of the Evidence Act matched the forensic report. The High Court's decision to dismiss the appeal and uphold the life sentence is affirmed.",
-      "similarity": 5.78
+      "similarity": 7.94
     },
     {
       "id": "SC-2011-1001",
       "year": 2011,
       "label": 0,
       "text_preview": "This appeal challenges the conviction under Section 302 IPC. The eyewitness testimony of PW-1 and PW-3 was found to be highly consistent and natural. Furthermore, the recovery of the blood-stained weapon under Section 27 of the Evidence Act matched the forensic report. The High Court's decision to dismiss the appeal and uphold the life sentence is affirmed.",
-      "similarity": 5.78
+      "similarity": 7.94
     }
   ],
   "prediction": {
@@ -332,7 +360,7 @@
       "region": "Unknown"
     },
     "original_outcome": 1,
-    "original_confidence": 95.72,
+    "original_confidence": 99.39,
     "adjustment": 8.0,
     "reason": "Boosted acceptance confidence by 8.0% to offset systemic historical disadvantage (DI=0.6)."
   },
@@ -346,18 +374,16 @@
     "alert_message": "Note: Legal interpretation in this area has shifted 2% toward rejection since 2020."
   },
   "reasoning_trail": [
-    "Case analysis initiated. Key factual matrix: \"she petitions the court to overturn the lower court's decision regarding her employment termination....\"",
-    "Governing statutes detected: Section 302 IPC",
-    "Statute provision: Section 302 IPC - Punishment for murder: Death or imprisonment for life",
+    "Case analysis initiated. Key factual matrix: \"Writ petition filed by a female software engineer against non-compliance with the POSH Act, 2013. Th...\"",
+    "Governing statutes detected: Section 4 POSH Act",
     "Historical precedent vectors retrieved from FAISS index (top-3 cosine similarity).",
     "Factual pattern alignment with precedent outcomes via XGBoost feature weighting.",
     "Final prediction synthesized from statutory, precedent, and factual signals."
   ],
   "structured_reasoning": {
-    "factual_analysis": "Case analysis initiated. Key factual matrix: \"she petitions the court to overturn the lower court's decision regarding her employment termination....\"",
+    "factual_analysis": "Case analysis initiated. Key factual matrix: \"Writ petition filed by a female software engineer against non-compliance with the POSH Act, 2013. Th...\"",
     "statutory_framework": [
-      "Governing statutes detected: Section 302 IPC",
-      "Statute provision: Section 302 IPC - Punishment for murder: Death or imprisonment for life"
+      "Governing statutes detected: Section 4 POSH Act"
     ],
     "precedent_analysis": [
       "Historical precedent vectors retrieved from FAISS index (top-3 cosine similarity).",
@@ -371,11 +397,11 @@
       "outcome": "ACCEPTED",
       "confidence": "99.00%",
       "key_factors": [
-        "court",
-        "corporation",
-        "breaches",
-        "violated terms",
-        "court dismissed"
+        "act",
+        "icc",
+        "posh",
+        "posh act",
+        "committee"
       ],
       "supporting_precedents": 3
     }
@@ -392,40 +418,60 @@
           "confidence": 0.4,
           "description": "Relevant case precedents supporting the prediction",
           "evidence": [
-            "Key matching terms: court, corporation, breaches",
+            "Key matching terms: act, icc, posh",
             "Precedent base count: 3"
           ],
           "children": [
             {
-              "name": "SC-2016-1021 (Similar: 0.06)",
-              "confidence": 0.0578,
+              "name": "SC-2016-1021 (Similar: 0.08)",
+              "confidence": 0.0794,
               "description": "Reference case with similar facts and law",
               "evidence": [
                 "Historical outcome: REJECTED",
-                "Semantic similarity: 5.78%",
+                "Semantic similarity: 7.94%",
                 "Counter-precedent analysis required"
               ],
               "children": []
             },
             {
-              "name": "SC-2021-1011 (Similar: 0.06)",
-              "confidence": 0.0578,
+              "name": "SC-2021-1011 (Similar: 0.08)",
+              "confidence": 0.0794,
               "description": "Reference case with similar facts and law",
               "evidence": [
                 "Historical outcome: REJECTED",
-                "Semantic similarity: 5.78%",
+                "Semantic similarity: 7.94%",
                 "Counter-precedent analysis required"
               ],
               "children": []
             },
             {
-              "name": "SC-2011-1001 (Similar: 0.06)",
-              "confidence": 0.0578,
+              "name": "SC-2011-1001 (Similar: 0.08)",
+              "confidence": 0.0794,
               "description": "Reference case with similar facts and law",
               "evidence": [
                 "Historical outcome: REJECTED",
-                "Semantic similarity: 5.78%",
+                "Semantic similarity: 7.94%",
                 "Counter-precedent analysis required"
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "Statutory Support",
+          "confidence": 0.6,
+          "description": "Applicable legal statutes and provisions",
+          "evidence": [
+            "Statute sections analyzed: 1",
+            "Framework completeness: High"
+          ],
+          "children": [
+            {
+              "name": "Section 4",
+              "confidence": 0.75,
+              "description": "POSH Act",
+              "evidence": [
+                "Governing statutes detected: Section 4 POSH Act"
               ],
               "children": []
             }
@@ -441,9 +487,9 @@
           ],
           "children": [
             {
-              "name": "Gap 1: Weak semantic indicators for: court, corporation",
+              "name": "Gap 1: Weak semantic indicators for: act, icc",
               "confidence": 0.45,
-              "description": "Weak semantic indicators for: court, corporation",
+              "description": "Weak semantic indicators for: act, icc",
               "evidence": [
                 "Requires further substantiation",
                 "Alternative interpretations possible"
@@ -456,34 +502,34 @@
       "summary": {
         "outcome": "ACCEPTED",
         "overall_confidence": 99.0,
-        "main_arguments": 2,
-        "total_evidence_points": 15,
+        "main_arguments": 3,
+        "total_evidence_points": 18,
         "tree_depth": 2
       }
     },
-    "tree_ascii": "\u2514\u2500\u2500 Prediction: ACCEPTED (0.99)\n    \u251c\u2500\u2500 Strong Precedent Alignment (0.40)\n        \u251c\u2500\u2500 Key matching terms: court, corporation, breaches\n        \u251c\u2500\u2500 Precedent base count: 3\n    \u2502   \u251c\u2500\u2500 SC-2016-1021 (Similar: 0.06) (0.06)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 5.78%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u2502   \u251c\u2500\u2500 SC-2021-1011 (Similar: 0.06) (0.06)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 5.78%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u2502   \u2514\u2500\u2500 SC-2011-1001 (Similar: 0.06) (0.06)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 5.78%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u2514\u2500\u2500 Weakness Identified (0.01)\n        \u251c\u2500\u2500 Confidence level: 99.00%\n        \u251c\u2500\u2500 Identified gaps: 1\n        \u2514\u2500\u2500 Gap 1: Weak semantic indicators for: court, corporation (0.45)\n            \u251c\u2500\u2500 Requires further substantiation\n            \u2514\u2500\u2500 Alternative interpretations possible\n",
+    "tree_ascii": "\u2514\u2500\u2500 Prediction: ACCEPTED (0.99)\n    \u251c\u2500\u2500 Strong Precedent Alignment (0.40)\n        \u251c\u2500\u2500 Key matching terms: act, icc, posh\n        \u251c\u2500\u2500 Precedent base count: 3\n    \u2502   \u251c\u2500\u2500 SC-2016-1021 (Similar: 0.08) (0.08)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 7.94%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u2502   \u251c\u2500\u2500 SC-2021-1011 (Similar: 0.08) (0.08)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 7.94%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u2502   \u2514\u2500\u2500 SC-2011-1001 (Similar: 0.08) (0.08)\n    \u2502       \u251c\u2500\u2500 Historical outcome: REJECTED\n    \u2502       \u251c\u2500\u2500 Semantic similarity: 7.94%\n    \u2502       \u2514\u2500\u2500 Counter-precedent analysis required\n    \u251c\u2500\u2500 Statutory Support (0.60)\n        \u251c\u2500\u2500 Statute sections analyzed: 1\n        \u251c\u2500\u2500 Framework completeness: High\n    \u2502   \u2514\u2500\u2500 Section 4 (0.75)\n    \u2502       \u2514\u2500\u2500 Governing statutes detected: Section 4 POSH Act\n    \u2514\u2500\u2500 Weakness Identified (0.01)\n        \u251c\u2500\u2500 Confidence level: 99.00%\n        \u251c\u2500\u2500 Identified gaps: 1\n        \u2514\u2500\u2500 Gap 1: Weak semantic indicators for: act, icc (0.45)\n            \u251c\u2500\u2500 Requires further substantiation\n            \u2514\u2500\u2500 Alternative interpretations possible\n",
     "summary": {
       "outcome": "ACCEPTED",
       "overall_confidence": 99.0,
-      "main_argument_branches": 2,
+      "main_argument_branches": 3,
       "precedent_strength": "Weak precedent foundation",
-      "statutory_strength": "No applicable statutes identified",
+      "statutory_strength": "Limited statutory support",
       "identified_weaknesses": [
-        "Weak indicators: court, corporation"
+        "Weak indicators: act, icc"
       ]
     }
   },
-  "explanation": "Upon meticulous examination of the factual matrix presented before this Court, and having regard to the submissions advanced by the learned counsel for both parties, the relevant statutory provisions and judicial precedents have been carefully analyzed. The applicable statutory provisions, namely Governing statutes detected: Section 302 IPC; Statute provision: Section 302 IPC - Punishment for murder: Death or imprisonment for life, have been duly considered. The precedent analysis conducted through hierarchical semantic vector clustering reveals a pattern consistent with established judicial reasoning in analogous matters. Having considered the totality of circumstances, the weight of evidence, and the applicable legal principles, this Court is of the considered opinion that the matter warrants a determination of: Accepted/Allowed. This assessment is corroborated by the convergence of multiple analytical vectors including statutory alignment, precedent similarity, and factual pattern recognition, achieving a high degree of confidence in the predicted judicial outcome.",
+  "explanation": "Upon meticulous examination of the factual matrix presented before this Court, and having regard to the submissions advanced by the learned counsel for both parties, the relevant statutory provisions and judicial precedents have been carefully analyzed. The applicable statutory provisions, namely Governing statutes detected: Section 4 POSH Act, have been duly considered. The precedent analysis conducted through hierarchical semantic vector clustering reveals a pattern consistent with established judicial reasoning in analogous matters. Having considered the totality of circumstances, the weight of evidence, and the applicable legal principles, this Court is of the considered opinion that the matter warrants a determination of: Accepted/Allowed. This assessment is corroborated by the convergence of multiple analytical vectors including statutory alignment, precedent similarity, and factual pattern recognition, achieving a high degree of confidence in the predicted judicial outcome.",
   "system_status": {
     "hdfs": {
-      "hdfs_available": true,
-      "base_uri": "hdfs:///judicial",
-      "storage_mode": "HDFS Distributed"
+      "hdfs_available": false,
+      "base_uri": "local://C:\\Judicial-AI-System\\Judicial-Bigdata-Project\\data\\hdfs",
+      "storage_mode": "Local Filesystem Fallback"
     },
     "graph": {
       "connected": false,
       "statutes": 1,
-      "cases": 9,
+      "cases": 19,
       "edges": 0,
       "backend": "In-Memory Graph"
     },
@@ -508,6 +554,6 @@
       "processing_mode": "Spark + spaCy",
       "spark_available": true
     },
-    "pipeline_build_time": 69.15
+    "pipeline_build_time": 38.12
   }
 }
